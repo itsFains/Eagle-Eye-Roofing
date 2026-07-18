@@ -62,10 +62,9 @@
     <!-- Splash Screen -->
     <div id="splash-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-500">
         <div class="text-center flex flex-col items-center">
-            <div class="relative mb-8 w-48 h-48 md:w-64 md:h-64 flex items-center justify-center">
-                <div class="absolute inset-0 rounded-full border-2 border-yellow-500/80 shadow-[0_0_120px_rgba(212,175,55,1)] animate-pulse"></div>
-                <!-- Changed w-3/4 h-3/4 to w-11/12 h-11/12 so it is much bigger but still has a gap -->
-                <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Eagle Eye Logo" class="w-11/12 h-11/12 object-contain relative z-10 logo-blend">
+            <div class="relative mb-8 w-72 h-72 md:w-96 md:h-96 flex items-center justify-center">
+                <!-- Removed all external shadows and glows. The logo-blend class will now completely erase the image background against the black screen -->
+                <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Eagle Eye Logo" class="w-full h-full object-contain relative z-10 logo-blend animate-pulse">
             </div>
             <h1 class="text-3xl md:text-5xl font-bold tracking-[0.2em] uppercase brand-font gold-gradient drop-shadow-[0_0_15px_rgba(212,175,55,0.4)]">Eagle Eye</h1>
             <h2 class="text-xl md:text-2xl tracking-[0.1em] uppercase text-zinc-300 mt-2 font-light">Roofing & Building</h2>
