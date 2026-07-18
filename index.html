@@ -11,9 +11,9 @@
     
     <title>Eagle Eye Roofing & Building | South Wales</title>
     
-    <!-- Favicon (Updated to Sirv) -->
-    <link rel="icon" type="image/png" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png">
-    <link rel="apple-touch-icon" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png">
+    <!-- Favicon (Optimized for Google Search) -->
+    <link rel="icon" type="image/png" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
+    <link rel="apple-touch-icon" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -62,9 +62,10 @@
     <!-- Splash Screen -->
     <div id="splash-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-500">
         <div class="text-center flex flex-col items-center">
-            <div class="relative mb-8">
+            <div class="relative mb-8 w-48 h-48 md:w-64 md:h-64 flex items-center justify-center">
                 <div class="absolute inset-0 rounded-full border-2 border-yellow-500/80 shadow-[0_0_120px_rgba(212,175,55,1)] animate-pulse"></div>
-                <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Eagle Eye Logo" class="w-48 h-48 md:w-64 md:h-64 object-cover rounded-full relative z-10 logo-blend">
+                <!-- Changed w-3/4 h-3/4 to w-11/12 h-11/12 so it is much bigger but still has a gap -->
+                <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Eagle Eye Logo" class="w-11/12 h-11/12 object-contain relative z-10 logo-blend">
             </div>
             <h1 class="text-3xl md:text-5xl font-bold tracking-[0.2em] uppercase brand-font gold-gradient drop-shadow-[0_0_15px_rgba(212,175,55,0.4)]">Eagle Eye</h1>
             <h2 class="text-xl md:text-2xl tracking-[0.1em] uppercase text-zinc-300 mt-2 font-light">Roofing & Building</h2>
@@ -91,6 +92,7 @@
                     <button onclick="switchTab('home')" class="text-white hover:text-yellow-500 uppercase tracking-wider text-sm font-medium transition-colors">Home</button>
                     <button onclick="switchTab('gallery')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-sm font-medium transition-colors">Projects</button>
                     <button onclick="switchTab('reviews')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-sm font-medium transition-colors">Reviews</button>
+                    <button onclick="switchTab('locations')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-sm font-medium transition-colors">Locations</button>
                     <button onclick="switchTab('contact')" class="gold-bg text-black px-6 py-2 rounded-full text-sm font-bold uppercase hover:opacity-90 transition-opacity transform hover:scale-105">Get a Quote</button>
                 </div>
                 
@@ -102,6 +104,7 @@
             <button onclick="switchTab('home'); toggleMobileMenu()" class="block w-full text-left text-white uppercase tracking-wider font-medium">Home</button>
             <button onclick="switchTab('gallery'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 uppercase tracking-wider font-medium">Projects</button>
             <button onclick="switchTab('reviews'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 uppercase tracking-wider font-medium">Reviews</button>
+            <button onclick="switchTab('locations'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 uppercase tracking-wider font-medium">Locations</button>
             <button onclick="switchTab('contact'); toggleMobileMenu()" class="block w-full text-center gold-bg text-black font-bold uppercase py-3 rounded tracking-wider">Get a Quote</button>
         </div>
     </nav>
@@ -614,6 +617,104 @@
                 </div>
                 <h3 class="text-2xl font-bold mb-4 text-white">Google Reviews Coming Soon</h3>
                 <p class="text-zinc-400">We are currently integrating our verified Google Reviews. Check back shortly to see what our clients have to say about our work!</p>
+            </div>
+        </section>
+
+        <!-- LOCATIONS TAB -->
+        <section id="content-locations" class="tab-content py-24 px-4 w-full">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-yellow-500 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Service Areas</p>
+                    <h2 class="text-4xl md:text-5xl brand-font font-bold gold-gradient drop-shadow-lg">AREAS WE COVER</h2>
+                    <div class="w-24 h-1 gold-bg mx-auto mt-6 rounded-full opacity-50"></div>
+                    <p class="text-zinc-300 max-w-3xl mx-auto mt-8 leading-relaxed md:text-lg font-light">
+                        Based in Swansea, Eagle Eye Roofing & Building proudly serves homeowners and businesses across South and West Wales. Whether you need an emergency roof repair, a brand new flat roof, or general building services, our expert team is ready to travel to your doorstep.
+                    </p>
+                </div>
+
+                <!-- SEO Locations Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mb-20">
+                    <!-- Location 1 -->
+                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
+                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
+                        <h3 class="text-lg font-bold text-white tracking-wide">Swansea</h3>
+                    </div>
+                    <!-- Location 2 -->
+                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
+                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
+                        <h3 class="text-lg font-bold text-white tracking-wide">Mumbles</h3>
+                    </div>
+                    <!-- Location 3 -->
+                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
+                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
+                        <h3 class="text-lg font-bold text-white tracking-wide">Morriston</h3>
+                    </div>
+                    <!-- Location 4 -->
+                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
+                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
+                        <h3 class="text-lg font-bold text-white tracking-wide">Neath</h3>
+                    </div>
+                    <!-- Location 5 -->
+                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
+                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
+                        <h3 class="text-lg font-bold text-white tracking-wide">Port Talbot</h3>
+                    </div>
+                    <!-- Location 6 -->
+                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
+                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
+                        <h3 class="text-lg font-bold text-white tracking-wide">Porthcawl</h3>
+                    </div>
+                    <!-- Location 7 -->
+                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
+                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
+                        <h3 class="text-lg font-bold text-white tracking-wide">Gorseinon</h3>
+                    </div>
+                    <!-- Location 8 -->
+                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
+                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
+                        <h3 class="text-lg font-bold text-white tracking-wide">Pontarddulais</h3>
+                    </div>
+                    <!-- Location 9 -->
+                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
+                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
+                        <h3 class="text-lg font-bold text-white tracking-wide">Carmarthen</h3>
+                    </div>
+                    <!-- Location 10 -->
+                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
+                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
+                        <h3 class="text-lg font-bold text-white tracking-wide">Ammanford</h3>
+                    </div>
+                    <!-- Location 11 -->
+                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
+                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
+                        <h3 class="text-lg font-bold text-white tracking-wide">Llanelli</h3>
+                    </div>
+                </div>
+
+                <!-- Google Map & CTA -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-zinc-900/50 border border-white/5 rounded-3xl overflow-hidden p-4 md:p-8">
+                    <div class="w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl border border-white/10 relative grayscale hover:grayscale-0 transition-all duration-700">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158309.28292850382!2d-4.10303102432832!3d51.642646241320364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486eec9b1e95e7c5%3A0xcb4c6e917d5e4a0!2sSwansea!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <div class="text-center lg:text-left">
+                        <h3 class="text-3xl brand-font font-bold mb-4 text-white">Don't see your town?</h3>
+                        <p class="text-zinc-400 mb-8 leading-relaxed">
+                            While these are our most frequent service areas, our team travels extensively throughout South Wales to ensure homeowners get the premium roofing work they deserve. If you are near any of these locations, we can likely reach you.
+                        </p>
+                        <button onclick="switchTab('contact')" class="gold-bg text-black px-8 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(212,175,55,0.3)] inline-flex items-center gap-3">
+                            <i class="fas fa-envelope"></i> Contact Us To Check
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
 
