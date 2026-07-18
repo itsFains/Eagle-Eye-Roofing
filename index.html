@@ -55,6 +55,9 @@
         .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         
         .logo-blend { mix-blend-mode: screen; }
+        
+        /* FAQ Accordion Transitions */
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out, opacity 0.3s ease-out; opacity: 0; }
     </style>
 </head>
 <body class="antialiased flex flex-col min-h-screen bg-black">
@@ -62,8 +65,8 @@
     <!-- Splash Screen -->
     <div id="splash-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-500">
         <div class="text-center flex flex-col items-center">
-            <div class="relative mb-8 w-72 h-72 md:w-96 md:h-96 flex items-center justify-center">
-                <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Eagle Eye Logo" class="w-full h-full object-contain relative z-10 logo-blend animate-pulse">
+            <div class="relative mb-10 w-[20rem] h-[20rem] md:w-[28rem] md:h-[28rem] flex items-center justify-center">
+                <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Eagle Eye Logo" class="w-full h-full object-contain relative z-10 logo-blend animate-pulse drop-shadow-[0_0_25px_rgba(212,175,55,0.5)]">
             </div>
             <h1 class="text-3xl md:text-5xl font-bold tracking-[0.2em] uppercase brand-font gold-gradient drop-shadow-[0_0_15px_rgba(212,175,55,0.4)]">Eagle Eye</h1>
             <h2 class="text-xl md:text-2xl tracking-[0.1em] uppercase text-zinc-300 mt-2 font-light">Roofing & Building</h2>
@@ -86,12 +89,13 @@
                     </div>
                 </div>
                 
-                <div class="hidden md:flex space-x-6 lg:space-x-8 items-center">
+                <div class="hidden md:flex space-x-5 lg:space-x-7 items-center">
                     <button onclick="switchTab('home')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Home</button>
                     <button onclick="switchTab('services')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Services</button>
                     <button onclick="switchTab('gallery')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Projects</button>
                     <button onclick="switchTab('reviews')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Reviews</button>
                     <button onclick="switchTab('locations')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Locations</button>
+                    <button onclick="switchTab('faq')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">FAQ</button>
                     <button onclick="switchTab('contact')" class="gold-bg text-black px-4 lg:px-6 py-2 rounded-full text-xs lg:text-sm font-bold uppercase hover:opacity-90 transition-opacity transform hover:scale-105">Get a Quote</button>
                 </div>
                 
@@ -105,6 +109,7 @@
             <button onclick="switchTab('gallery'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Projects</button>
             <button onclick="switchTab('reviews'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Reviews</button>
             <button onclick="switchTab('locations'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Locations</button>
+            <button onclick="switchTab('faq'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">FAQ</button>
             <button onclick="switchTab('contact'); toggleMobileMenu()" class="block w-full text-center gold-bg text-black font-bold uppercase py-3 rounded tracking-wider">Get a Quote</button>
         </div>
     </nav>
@@ -194,7 +199,7 @@
                     </div>
                     <h3 class="text-2xl brand-font font-bold text-white mb-4">Chimneys & Leadwork</h3>
                     <p class="text-zinc-400 leading-relaxed mb-6">
-                        Expert chimney maintenance is crucial for a watertight home. We offer complete chimney stack removals (knockdowns), repointing for crumbling mortar, and the installation of custom lead flashings to seal vulnerable joints.
+                        Expert chimney maintenance is crucial for a watertight home. We offer complete chimney stack removals (knockdowns), repointing for crumbling mortar, and the installation of custom lead flashings to seal vulnerable joints perfectly.
                     </p>
                 </div>
 
@@ -721,58 +726,47 @@
                 </div>
 
                 <!-- SEO Locations Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 mb-20">
-                    <!-- Location 1 -->
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mb-20">
                     <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
                         <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
                         <h3 class="text-lg font-bold text-white tracking-wide">Swansea</h3>
                     </div>
-                    <!-- Location 2 -->
                     <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
                         <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
                         <h3 class="text-lg font-bold text-white tracking-wide">Mumbles</h3>
                     </div>
-                    <!-- Location 3 -->
                     <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
                         <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
                         <h3 class="text-lg font-bold text-white tracking-wide">Morriston</h3>
                     </div>
-                    <!-- Location 4 -->
                     <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
                         <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
                         <h3 class="text-lg font-bold text-white tracking-wide">Neath</h3>
                     </div>
-                    <!-- Location 5 -->
                     <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
                         <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
                         <h3 class="text-lg font-bold text-white tracking-wide">Port Talbot</h3>
                     </div>
-                    <!-- Location 6 -->
                     <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
                         <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
                         <h3 class="text-lg font-bold text-white tracking-wide">Porthcawl</h3>
                     </div>
-                    <!-- Location 7 -->
                     <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
                         <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
                         <h3 class="text-lg font-bold text-white tracking-wide">Gorseinon</h3>
                     </div>
-                    <!-- Location 8 -->
                     <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
                         <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
                         <h3 class="text-lg font-bold text-white tracking-wide">Pontarddulais</h3>
                     </div>
-                    <!-- Location 9 -->
                     <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
                         <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
                         <h3 class="text-lg font-bold text-white tracking-wide">Carmarthen</h3>
                     </div>
-                    <!-- Location 10 -->
                     <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
                         <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
                         <h3 class="text-lg font-bold text-white tracking-wide">Ammanford</h3>
                     </div>
-                    <!-- Location 11 -->
                     <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
                         <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
                         <h3 class="text-lg font-bold text-white tracking-wide">Llanelli</h3>
@@ -802,6 +796,104 @@
                             <i class="fas fa-envelope"></i> Contact Us To Check
                         </button>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ TAB -->
+        <section id="content-faq" class="tab-content py-24 px-4 w-full">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-yellow-500 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Your Questions Answered</p>
+                    <h2 class="text-4xl md:text-5xl brand-font font-bold gold-gradient drop-shadow-lg">FREQUENTLY ASKED QUESTIONS</h2>
+                    <div class="w-24 h-1 gold-bg mx-auto mt-6 rounded-full opacity-50"></div>
+                </div>
+
+                <div class="space-y-4">
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
+                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
+                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">Do you offer free, no-obligation quotes?</h3>
+                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-black/30">
+                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
+                                Absolutely. We believe in total transparency. We will come out to inspect your property, assess the required work, and provide a comprehensive, completely free quote before any commitment is made.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
+                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
+                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">Do you handle emergency roof repairs?</h3>
+                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-black/30">
+                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
+                                Yes. South Wales weather can be unpredictable. If you have storm damage, missing slates, or a severe leak causing internal water damage, call us immediately. We prioritize emergency calls to get your home watertight as quickly as possible.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
+                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
+                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">How long does a full roof replacement take?</h3>
+                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-black/30">
+                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
+                                While it depends heavily on the size of the property and the weather, a standard semi-detached full re-roof usually takes between 3 to 5 days. We work efficiently while ensuring top-tier craftsmanship, and we will always keep you updated on timelines.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
+                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
+                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">Will I need scaffolding for my project?</h3>
+                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-black/30">
+                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
+                                For full re-roofs, chimney removals, and extensive fascia work, scaffolding is legally required for health and safety. If scaffolding is needed, we will arrange it completely and factor it into your upfront quote so there are no hidden surprises. Minor repairs can sometimes be done via ladders depending on safe access.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
+                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
+                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">What kind of flat roofing do you install?</h3>
+                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-black/30">
+                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
+                                We specialize in modern flat roofing systems that outlast traditional felt. We install highly durable EPDM rubber roofing and GRP (Fiberglass) systems. Both are incredibly resistant to Welsh rain, won't crack under sun exposure, and are perfect for garages, extensions, and dormers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
+                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
+                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">Are you fully insured and do you guarantee your work?</h3>
+                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-answer bg-black/30">
+                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
+                                Yes. We are fully insured for all roofing and building works. Furthermore, as a family-run business, we stake our reputation on every job. We offer guarantees on all major works (such as new flat roofs and full re-roofs) giving you complete peace of mind.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-16 text-center">
+                    <p class="text-zinc-400 mb-6">Still have a question that isn't answered here?</p>
+                    <button onclick="switchTab('contact')" class="gold-bg text-black px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                        Contact Us Directly
+                    </button>
                 </div>
             </div>
         </section>
@@ -903,6 +995,22 @@
                 moreReviewsDiv.classList.add("hidden");
                 btn.innerText = "Load All 36 Reviews";
                 window.scrollTo({top: document.getElementById('content-reviews').offsetTop, behavior: 'smooth'});
+            }
+        }
+
+        // FAQ Toggle Function
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.style.opacity = 0;
+                icon.classList.remove('rotate-180');
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                content.style.opacity = 1;
+                icon.classList.add('rotate-180');
             }
         }
         
