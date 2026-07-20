@@ -1,1228 +1,1123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Looking for the number one roofing company in Swansea? Eagle Eye Roofing & Building provides expert full re-roofs, flat roofing, repairs, and building services across South Wales.">
-    <meta name="keywords" content="roofing in Swansea, number one roofers Swansea, roof repair South Wales, flat roof Swansea, local roofers, Eagle Eye Roofing and Building, slate roofing, building services Swansea, solar panels">
-    <meta name="author" content="Eagle Eye Roofing & Building">
-    
-    <title>Eagle Eye Roofing & Building | South Wales</title>
-    
-    <!-- Favicon (Optimized for Google Search) -->
-    <link rel="icon" type="image/png" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
-    <link rel="apple-touch-icon" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Schema Markup for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "RoofingContractor",
-      "name": "Eagle Eye Roofing & Building",
-      "url": "https://www.eagleeyeroofingandbuilding.com/",
-      "telephone": "07753865817",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "36"
-      }
-    }
-    </script>
-
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #000000; color: white; overflow-x: hidden; }
-        .brand-font { font-family: 'Cinzel', serif; }
-        .tab-content { display: none; animation: fadeIn 0.4s ease-in-out; }
-        .tab-content.active { display: block; }
-        
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        
-        .gold-gradient { background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C); -webkit-background-clip: text; background-clip: text; color: transparent; }
-        .gold-bg { background: linear-gradient(to right, #BF953F, #B38728, #AA771C); }
-        
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        
-        /* The magic trick that makes the black background of the logo disappear */
-        .logo-blend { mix-blend-mode: screen; }
-        
-        /* FAQ Accordion Transitions */
-        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out, opacity 0.3s ease-out; opacity: 0; }
-    </style>
-</head>
-<body class="antialiased flex flex-col min-h-screen bg-black">
-
-    <!-- Splash Screen -->
-    <div id="splash-screen" class="fixed inset-0 z-50 flex items-center justify-center bg-black transition-opacity duration-500">
-        <div class="text-center flex flex-col items-center">
-            <!-- Completely clean container - no borders, no drop shadows -->
-            <div class="relative mb-10 w-[20rem] h-[20rem] md:w-[28rem] md:h-[28rem] flex items-center justify-center">
-                <!-- Only logo-blend and animate-pulse applied -->
-                <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Eagle Eye Logo" class="w-full h-full object-contain logo-blend animate-pulse">
-            </div>
-            <h1 class="text-3xl md:text-5xl font-bold tracking-[0.2em] uppercase brand-font gold-gradient drop-shadow-[0_0_15px_rgba(212,175,55,0.4)]">Eagle Eye</h1>
-            <h2 class="text-xl md:text-2xl tracking-[0.1em] uppercase text-zinc-300 mt-2 font-light">Roofing & Building</h2>
-            <p class="text-yellow-500/80 tracking-[0.3em] text-xs md:text-sm uppercase mt-6 font-semibold animate-pulse">Precision • Integrity • Craftsmanship</p>
-        </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-40 bg-black/95 backdrop-blur-md border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex items-center cursor-pointer group" onclick="switchTab('home')">
-                    <div class="relative">
-                        <div class="absolute inset-0 rounded-full border border-yellow-600/50 shadow-[0_0_15px_rgba(212,175,55,0.2)] group-hover:shadow-[0_0_25px_rgba(212,175,55,0.5)] transition-all"></div>
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Logo" class="h-12 w-12 sm:h-14 sm:w-14 object-cover rounded-full relative z-10 logo-blend">
-                    </div>
-                    <div class="ml-3 flex flex-col justify-center">
-                        <span class="text-sm sm:text-lg font-bold tracking-widest uppercase brand-font text-yellow-500 leading-tight">Eagle Eye</span>
-                        <span class="text-[0.55rem] sm:text-[0.65rem] font-semibold tracking-[0.15em] uppercase text-zinc-300 mt-0.5 whitespace-nowrap">Roofing & Building</span>
-                    </div>
-                </div>
-                
-                <div class="hidden md:flex space-x-5 lg:space-x-7 items-center">
-                    <button onclick="switchTab('home')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Home</button>
-                    <button onclick="switchTab('services')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Services</button>
-                    <button onclick="switchTab('gallery')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Projects</button>
-                    <button onclick="switchTab('reviews')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Reviews</button>
-                    <button onclick="switchTab('locations')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Locations</button>
-                    <button onclick="switchTab('faq')" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">FAQ</button>
-                    <button onclick="switchTab('contact')" class="gold-bg text-black px-4 lg:px-6 py-2 rounded-full text-xs lg:text-sm font-bold uppercase hover:opacity-90 transition-opacity transform hover:scale-105">Get a Quote</button>
-                </div>
-                
-                <button onclick="toggleMobileMenu()" class="md:hidden text-zinc-400 text-2xl hover:text-yellow-500 transition-colors"><i class="fas fa-bars"></i></button>
-            </div>
-        </div>
-        
-        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-white/10 px-4 py-4 space-y-4">
-            <button onclick="switchTab('home'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Home</button>
-            <button onclick="switchTab('services'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Services</button>
-            <button onclick="switchTab('gallery'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Projects</button>
-            <button onclick="switchTab('reviews'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Reviews</button>
-            <button onclick="switchTab('locations'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Locations</button>
-            <button onclick="switchTab('faq'); toggleMobileMenu()" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">FAQ</button>
-            <button onclick="switchTab('contact'); toggleMobileMenu()" class="block w-full text-center gold-bg text-black font-bold uppercase py-3 rounded tracking-wider">Get a Quote</button>
-        </div>
-    </nav>
-
-    <main class="flex-grow flex flex-col relative">
-        
-        <!-- HOME TAB -->
-        <section id="content-home" class="tab-content active flex-grow">
-            <div class="relative h-[80vh] md:h-[90vh] flex items-center justify-center overflow-hidden">
-                <div id="hero-slide-1" class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" style="background-image: url('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project5.JPG');"></div>
-                <div id="hero-slide-2" class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.1.JPG');"></div>
-                <div id="hero-slide-3" class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.jpg');"></div>
-                <div id="hero-slide-4" class="hero-slide absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.3.png');"></div>
-                
-                <div class="absolute inset-0 bg-black/60"></div>
-                
-                <div class="relative z-10 text-center px-4 max-w-4xl">
-                    <h1 class="text-4xl md:text-8xl font-bold mb-6 brand-font text-white drop-shadow-lg leading-tight">EAGLE EYE <br><span class="gold-gradient">ROOFING & BUILDING</span></h1>
-                    <p class="text-zinc-300 mb-10 max-w-2xl mx-auto font-light md:text-xl">Precision, integrity, and craftsmanship. Trusted across South Wales.</p>
-                </div>
-            </div>
-
-            <div class="bg-black py-24 px-4 border-t border-white/5 relative overflow-hidden">
-                <div class="absolute top-0 left-1/2 -translate-x-1/2 w-64 h-64 bg-yellow-600/5 rounded-full blur-[100px]"></div>
-                <div class="max-w-4xl mx-auto text-center relative z-10">
-                    <h2 class="text-3xl md:text-4xl brand-font font-bold mb-8 gold-gradient">Our Family Guarantee</h2>
-                    <p class="text-zinc-300 leading-relaxed text-lg md:text-xl font-light">
-                        At Eagle Eye Roofing & Building, you aren't just a customer—you're a neighbor. As a proud, family-run business based in South Wales, our name and reputation go into every single slate we lay and every timber we secure. We know how stressful home repairs can be, which is why we guarantee total transparency, honest pricing, and constant communication from the first handshake to the final sweep-up. We treat your home exactly the way we treat our own: with absolute precision, unwavering integrity, and premium craftsmanship built to withstand the Welsh weather. 
-                    </p>
-                    <div class="mt-8">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" class="w-16 h-16 mx-auto object-cover rounded-full logo-blend opacity-70" alt="Logo">
-                    </div>
-                </div>
-            </div>
-
-            <!-- Guarantees & Certifications Badges -->
-            <div class="bg-zinc-950 py-20 px-4 border-t border-white/5 relative">
-                <div class="max-w-7xl mx-auto">
-                    <div class="text-center mb-16">
-                        <p class="text-yellow-500 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Trust & Quality</p>
-                        <h2 class="text-4xl md:text-5xl brand-font font-bold gold-gradient drop-shadow-lg">CERTIFIED & GUARANTEED</h2>
-                        <div class="w-24 h-1 gold-bg mx-auto mt-6 rounded-full opacity-50"></div>
-                        <p class="text-zinc-400 max-w-2xl mx-auto mt-6 font-light">Peace of mind comes standard with every project. We are fully qualified, insured, and stand by our work for decades.</p>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <!-- Badge 1: 25 Year Warranty -->
-                        <div class="bg-black border border-yellow-600/30 p-8 rounded-2xl text-center flex flex-col items-center hover:border-yellow-500 hover:-translate-y-2 transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.1)] group">
-                            <div class="w-20 h-20 rounded-full border-2 border-yellow-600/50 flex items-center justify-center mb-6 bg-zinc-900 group-hover:scale-110 transition-transform">
-                                <span class="text-3xl font-bold text-yellow-500 brand-font">25</span>
-                            </div>
-                            <h4 class="text-white font-bold text-lg mb-3">25-Year Guarantee</h4>
-                            <p class="text-zinc-400 text-sm leading-relaxed">Comprehensive warranty and aftercare on materials and extensive roof systems.</p>
-                        </div>
-
-                        <!-- Badge 2: 10 Year Workmanship -->
-                        <div class="bg-black border border-yellow-600/30 p-8 rounded-2xl text-center flex flex-col items-center hover:border-yellow-500 hover:-translate-y-2 transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.1)] group">
-                            <div class="w-20 h-20 rounded-full border-2 border-yellow-600/50 flex items-center justify-center mb-6 bg-zinc-900 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-hammer text-3xl text-yellow-500"></i>
-                            </div>
-                            <h4 class="text-white font-bold text-lg mb-3">10-Year Workmanship</h4>
-                            <p class="text-zinc-400 text-sm leading-relaxed">Our labor and installation are fully guaranteed for a decade. We do it right the first time.</p>
-                        </div>
-
-                        <!-- Badge 3: NVQ Level 2 -->
-                        <div class="bg-black border border-yellow-600/30 p-8 rounded-2xl text-center flex flex-col items-center hover:border-yellow-500 hover:-translate-y-2 transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.1)] group">
-                            <div class="w-20 h-20 rounded-full border-2 border-yellow-600/50 flex items-center justify-center mb-6 bg-zinc-900 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-certificate text-3xl text-yellow-500"></i>
-                            </div>
-                            <h4 class="text-white font-bold text-lg mb-3">NVQ Level 2 Certified</h4>
-                            <p class="text-zinc-400 text-sm leading-relaxed">Officially qualified and certified in professional roofing operations and construction.</p>
-                        </div>
-
-                        <!-- Badge 4: Marley Solar Panels -->
-                        <div class="bg-black border border-yellow-600/30 p-8 rounded-2xl text-center flex flex-col items-center hover:border-yellow-500 hover:-translate-y-2 transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.1)] group">
-                            <div class="w-20 h-20 rounded-full border-2 border-yellow-600/50 flex items-center justify-center mb-6 bg-zinc-900 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-solar-panel text-3xl text-yellow-500"></i>
-                            </div>
-                            <h4 class="text-white font-bold text-lg mb-3">Marley Solar Panels</h4>
-                            <p class="text-zinc-400 text-sm leading-relaxed">In progress: Advanced certification for installing cutting-edge Marley Solar integrations.</p>
-                        </div>
-                        
-                        <!-- NEW Badge 5: Leadwork -->
-                        <div class="bg-black border border-yellow-600/30 p-8 rounded-2xl text-center flex flex-col items-center hover:border-yellow-500 hover:-translate-y-2 transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.1)] group">
-                            <div class="w-20 h-20 rounded-full border-2 border-yellow-600/50 flex items-center justify-center mb-6 bg-zinc-900 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-fire text-3xl text-yellow-500"></i>
-                            </div>
-                            <h4 class="text-white font-bold text-lg mb-3">Leadwork Certified</h4>
-                            <p class="text-zinc-400 text-sm leading-relaxed">Fully qualified in traditional lead bossing and welding for completely watertight valleys and chimney flashings.</p>
-                        </div>
-
-                        <!-- NEW Badge 6: City & Guilds -->
-                        <div class="bg-black border border-yellow-600/30 p-8 rounded-2xl text-center flex flex-col items-center hover:border-yellow-500 hover:-translate-y-2 transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.1)] group">
-                            <div class="w-20 h-20 rounded-full border-2 border-yellow-600/50 flex items-center justify-center mb-6 bg-zinc-900 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-graduation-cap text-3xl text-yellow-500"></i>
-                            </div>
-                            <h4 class="text-white font-bold text-lg mb-3">City & Guilds Qualified</h4>
-                            <p class="text-zinc-400 text-sm leading-relaxed">Time-served tradesmen holding highly recognized City & Guilds credentials in roofing and construction.</p>
-                        </div>
-
-                        <!-- NEW Badge 7: CSCS -->
-                        <div class="bg-black border border-yellow-600/30 p-8 rounded-2xl text-center flex flex-col items-center hover:border-yellow-500 hover:-translate-y-2 transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.1)] group">
-                            <div class="w-20 h-20 rounded-full border-2 border-yellow-600/50 flex items-center justify-center mb-6 bg-zinc-900 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-id-card text-3xl text-yellow-500"></i>
-                            </div>
-                            <h4 class="text-white font-bold text-lg mb-3">CSCS Registered</h4>
-                            <p class="text-zinc-400 text-sm leading-relaxed">Fully compliant with the Construction Skills Certification Scheme, ensuring strict site safety and competency.</p>
-                        </div>
-
-                        <!-- NEW Badge 8: Safety & Heights -->
-                        <div class="bg-black border border-yellow-600/30 p-8 rounded-2xl text-center flex flex-col items-center hover:border-yellow-500 hover:-translate-y-2 transition-all duration-300 shadow-[0_0_15px_rgba(212,175,55,0.1)] group">
-                            <div class="w-20 h-20 rounded-full border-2 border-yellow-600/50 flex items-center justify-center mb-6 bg-zinc-900 group-hover:scale-110 transition-transform">
-                                <i class="fas fa-hard-hat text-3xl text-yellow-500"></i>
-                            </div>
-                            <h4 class="text-white font-bold text-lg mb-3">Health & Safety Passed</h4>
-                            <p class="text-zinc-400 text-sm leading-relaxed">Extensively trained and certified in safe working at heights, manual handling, and modern roofing safety standards.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICES TAB -->
-        <section id="content-services" class="tab-content py-24 px-4 max-w-7xl mx-auto w-full">
-            <div class="text-center mb-16">
-                <p class="text-yellow-500 uppercase tracking-[0.2em] text-sm font-semibold mb-3">What We Do</p>
-                <h2 class="text-4xl md:text-5xl brand-font font-bold gold-gradient drop-shadow-lg">EXPERT ROOFING SOLUTIONS</h2>
-                <div class="w-24 h-1 gold-bg mx-auto mt-6 rounded-full opacity-50"></div>
-                <p class="text-zinc-300 max-w-3xl mx-auto mt-8 leading-relaxed md:text-lg font-light">
-                    From emergency leak repairs to complete roof replacements, our team delivers high-quality craftsmanship designed to protect your home from the unpredictable South Wales weather.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <!-- Service 1 -->
-                <div class="bg-zinc-900 border border-white/10 rounded-2xl p-8 hover:border-yellow-600/50 hover:-translate-y-2 transition-all duration-300 shadow-lg group">
-                    <div class="w-16 h-16 rounded-full bg-zinc-950 border border-yellow-600/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-home text-yellow-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl brand-font font-bold text-white mb-4">Full Re-Roofs</h3>
-                    <p class="text-zinc-400 leading-relaxed mb-6">
-                        Whether you need traditional Welsh slate or modern interlocking tiles, we provide complete roof replacements. We strip the old materials, replace damaged timbers and felt, and install a brand new, highly durable roof built to last for decades.
-                    </p>
-                </div>
-
-                <!-- Service 2 -->
-                <div class="bg-zinc-900 border border-white/10 rounded-2xl p-8 hover:border-yellow-600/50 hover:-translate-y-2 transition-all duration-300 shadow-lg group">
-                    <div class="w-16 h-16 rounded-full bg-zinc-950 border border-yellow-600/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-layer-group text-yellow-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl brand-font font-bold text-white mb-4">Flat Roofing</h3>
-                    <p class="text-zinc-400 leading-relaxed mb-6">
-                        Specializing in long-lasting, watertight flat roof systems for garages, extensions, and dormers. We offer modern EPDM rubber roofing and fiberglass (GRP) systems that are incredibly resistant to standing water and severe weather.
-                    </p>
-                </div>
-
-                <!-- Service 3 -->
-                <div class="bg-zinc-900 border border-white/10 rounded-2xl p-8 hover:border-yellow-600/50 hover:-translate-y-2 transition-all duration-300 shadow-lg group">
-                    <div class="w-16 h-16 rounded-full bg-zinc-950 border border-yellow-600/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-tools text-yellow-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl brand-font font-bold text-white mb-4">Roof Repairs</h3>
-                    <p class="text-zinc-400 leading-relaxed mb-6">
-                        Don't let a small leak turn into major structural damage. We provide rapid response repairs for slipped or broken slates, storm damage, rotten battens, and persistent leaks, finding the source of the problem and fixing it right the first time.
-                    </p>
-                </div>
-
-                <!-- Service 4 -->
-                <div class="bg-zinc-900 border border-white/10 rounded-2xl p-8 hover:border-yellow-600/50 hover:-translate-y-2 transition-all duration-300 shadow-lg group">
-                    <div class="w-16 h-16 rounded-full bg-zinc-950 border border-yellow-600/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-fire-alt text-yellow-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl brand-font font-bold text-white mb-4">Chimneys & Leadwork</h3>
-                    <p class="text-zinc-400 leading-relaxed mb-6">
-                        Expert chimney maintenance is crucial for a watertight home. We offer complete chimney stack removals (knockdowns), repointing for crumbling mortar, and the installation of custom lead flashings to seal vulnerable joints perfectly.
-                    </p>
-                </div>
-
-                <!-- Service 5 -->
-                <div class="bg-zinc-900 border border-white/10 rounded-2xl p-8 hover:border-yellow-600/50 hover:-translate-y-2 transition-all duration-300 shadow-lg group">
-                    <div class="w-16 h-16 rounded-full bg-zinc-950 border border-yellow-600/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-water text-yellow-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl brand-font font-bold text-white mb-4">Fascias & Guttering</h3>
-                    <p class="text-zinc-400 leading-relaxed mb-6">
-                        Upgrade your home's exterior and protect your brickwork with our roofline services. We supply and install high-quality UPVC fascias, soffits, and guttering systems that require zero painting and provide excellent drainage.
-                    </p>
-                </div>
-
-                <!-- Service 6 -->
-                <div class="bg-zinc-900 border border-white/10 rounded-2xl p-8 hover:border-yellow-600/50 hover:-translate-y-2 transition-all duration-300 shadow-lg group">
-                    <div class="w-16 h-16 rounded-full bg-zinc-950 border border-yellow-600/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-sun text-yellow-500 text-2xl"></i>
-                    </div>
-                    <h3 class="text-2xl brand-font font-bold text-white mb-4">Velux Windows</h3>
-                    <p class="text-zinc-400 leading-relaxed mb-6">
-                        Bring natural light and ventilation into your loft conversions or extensions. We are highly experienced in the precise fitting, replacement, and resealing of Velux windows and skylights to ensure they are 100% draft and leak-proof.
-                    </p>
-                </div>
-                
-                <!-- Service 7 - Marley Solar Panels -->
-                <div class="bg-zinc-900 border border-white/10 rounded-2xl p-8 hover:border-yellow-600/50 hover:-translate-y-2 transition-all duration-300 shadow-lg group">
-                    <div class="w-16 h-16 rounded-full bg-zinc-950 border border-yellow-600/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fas fa-solar-panel text-yellow-500 text-2xl"></i>
-                    </div>
-                    <div class="flex justify-between items-start mb-4">
-                        <h3 class="text-2xl brand-font font-bold text-white">Solar Panels</h3>
-                        <span class="text-[0.65rem] uppercase tracking-wider bg-yellow-600/20 text-yellow-500 px-2 py-1 rounded border border-yellow-600/30">In Progress</span>
-                    </div>
-                    <p class="text-zinc-400 leading-relaxed mb-6">
-                        We are currently expanding our expertise to include fully integrated Marley Solar Panel systems. Soon, we will be able to upgrade your roof with cutting-edge, energy-efficient solar technology seamlessly built into your tiling.
-                    </p>
-                </div>
-
-            </div>
-            
-            <div class="mt-16 text-center">
-                <button onclick="switchTab('contact')" class="gold-bg text-black px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
-                    Get a Free Quote For Your Project
-                </button>
-            </div>
-        </section>
-
-        <!-- PROJECTS TAB -->
-        <section id="content-gallery" class="tab-content py-16 px-4 max-w-7xl mx-auto w-full">
-            <div class="text-center mb-16">
-                <p class="text-yellow-500 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Our Portfolio</p>
-                <h2 class="text-4xl md:text-5xl brand-font font-bold gold-gradient drop-shadow-lg">FULL ROOF PROJECTS</h2>
-                <div class="w-24 h-1 gold-bg mx-auto mt-6 rounded-full opacity-50"></div>
-            </div>
-
-            <div id="gallery-projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
-                    <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.1.JPG')">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.1.JPG" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <i class="fas fa-expand text-white text-3xl"></i>
-                        </div>
-                    </div>
-                    <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.2.JPG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.2.JPG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.3.JPG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.3.JPG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.4.JPG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.4.JPG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.5.JPG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.5.JPG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.6.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.6.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.7.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.7.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.8.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.8.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.9.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.9.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.10.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.10.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.11.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.11.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                    </div>
-                </div>
-
-                <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
-                    <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project2.jpg')">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project2.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <i class="fas fa-expand text-white text-3xl"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
-                    <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project3.1.jpg')">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project3.1.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <i class="fas fa-expand text-white text-3xl"></i>
-                        </div>
-                    </div>
-                    <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project3.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project3.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                    </div>
-                </div>
-
-                <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
-                    <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.1.jpg')">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.1.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <i class="fas fa-expand text-white text-3xl"></i>
-                        </div>
-                    </div>
-                    <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.2.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.2.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                    </div>
-                </div>
-
-                <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
-                    <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project5.1.JPG')">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project5.1.JPG" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <i class="fas fa-expand text-white text-3xl"></i>
-                        </div>
-                    </div>
-                    <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project5.JPG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project5.JPG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                    </div>
-                </div>
-
-                <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
-                    <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project6.jpg')">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project6.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <i class="fas fa-expand text-white text-3xl"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
-                    <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.1.jpg')">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.1.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <i class="fas fa-expand text-white text-3xl"></i>
-                        </div>
-                    </div>
-                    <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.2.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.2.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.3.JPG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.3.JPG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.4.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.4.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.5.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.5.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.6.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.6.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.8.PNG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.8.PNG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                    </div>
-                </div>
-
-                <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
-                    <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.1.png')">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.1.png" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <i class="fas fa-expand text-white text-3xl"></i>
-                        </div>
-                    </div>
-                    <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.2.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.2.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.3.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.3.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.4.PNG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.4.PNG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.5.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.5.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.6.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.6.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.8.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.8.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.9.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.9.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                    </div>
-                </div>
-
-                <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
-                    <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project9.png')">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project9.png" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <i class="fas fa-expand text-white text-3xl"></i>
-                        </div>
-                    </div>
-                    <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project9.1.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project9.1.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- REVIEWS TAB -->
-        <section id="content-reviews" class="tab-content py-24 px-4 text-center min-h-[70vh]">
-            <h2 class="text-4xl brand-font font-bold mb-4 gold-gradient">Client Feedback</h2>
-            <p class="text-zinc-400 max-w-2xl mx-auto mb-16">See what our customers across South Wales are saying about our roofing and building services on social media.</p>
-            
-            <!-- Facebook Reviews Grid (Top 6 Initial Load) -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-8 text-left">
-                
-                <!-- Review 1 -->
-                <div class="bg-zinc-900 border border-white/10 hover:border-[#1877F2]/50 transition-colors p-8 rounded-2xl relative shadow-lg">
-                    <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="absolute top-6 right-6 text-[#1877F2] text-3xl hover:scale-110 transition-transform"><i class="fab fa-facebook"></i></a>
-                    <div class="flex text-yellow-500 text-sm mb-4 gap-1">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-zinc-300 italic mb-6 leading-relaxed">"Lee and the whole team are brilliant! Came to the house to view the roof one day after me contacting him... Within 10 days, I had scaffolding up, old roof ripped off, new roof put on, attic insulated and new waterworks! 10/10 would recommend to anyone!"</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">LJ</div>
-                        <div>
-                            <p class="text-white font-bold text-sm">Luke John</p>
-                            <p class="text-zinc-500 text-xs">Facebook Recommendation</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 2 -->
-                <div class="bg-zinc-900 border border-white/10 hover:border-[#1877F2]/50 transition-colors p-8 rounded-2xl relative shadow-lg">
-                    <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="absolute top-6 right-6 text-[#1877F2] text-3xl hover:scale-110 transition-transform"><i class="fab fa-facebook"></i></a>
-                    <div class="flex text-yellow-500 text-sm mb-4 gap-1">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-zinc-300 italic mb-6 leading-relaxed">"I recently had my roof replaced by Eagle Eye and I couldn't be happier with the results. From the initial inspection to the final cleanup, the boys were professional, punctual, and highly skilled. They provided a clear estimate... The new roof looks fantastic."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">DR</div>
-                        <div>
-                            <p class="text-white font-bold text-sm">Deb Rossi</p>
-                            <p class="text-zinc-500 text-xs">Facebook Recommendation</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 3 -->
-                <div class="bg-zinc-900 border border-white/10 hover:border-[#1877F2]/50 transition-colors p-8 rounded-2xl relative shadow-lg">
-                    <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="absolute top-6 right-6 text-[#1877F2] text-3xl hover:scale-110 transition-transform"><i class="fab fa-facebook"></i></a>
-                    <div class="flex text-yellow-500 text-sm mb-4 gap-1">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-zinc-300 italic mb-6 leading-relaxed">"I cannot thank these enough. Had to have chimney removed and Leejay Gluyas was there sorting our roof straight away for us. Amazing company and really cannot thank you enough. I was so stressed and you sorted the roof so quickly."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">LP</div>
-                        <div>
-                            <p class="text-white font-bold text-sm">Lisa Phillips</p>
-                            <p class="text-zinc-500 text-xs">Facebook Recommendation</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 4 -->
-                <div class="bg-zinc-900 border border-white/10 hover:border-[#1877F2]/50 transition-colors p-8 rounded-2xl relative shadow-lg">
-                    <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="absolute top-6 right-6 text-[#1877F2] text-3xl hover:scale-110 transition-transform"><i class="fab fa-facebook"></i></a>
-                    <div class="flex text-yellow-500 text-sm mb-4 gap-1">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-zinc-300 italic mb-6 leading-relaxed">"Leejay and his gang absolutely smashed it for me at short notice. I wasn't expecting to need a new roof until I checked the inside. a high percentage of my batterns where rotten... Eagleye roofing came to the rescue and well happy with the velux windows."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">RT</div>
-                        <div>
-                            <p class="text-white font-bold text-sm">Richard Taylor</p>
-                            <p class="text-zinc-500 text-xs">Facebook Recommendation</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Review 5 -->
-                <div class="bg-zinc-900 border border-white/10 hover:border-[#1877F2]/50 transition-colors p-8 rounded-2xl relative shadow-lg">
-                    <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="absolute top-6 right-6 text-[#1877F2] text-3xl hover:scale-110 transition-transform"><i class="fab fa-facebook"></i></a>
-                    <div class="flex text-yellow-500 text-sm mb-4 gap-1">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-zinc-300 italic mb-6 leading-relaxed">"Leejay and the boys came and helped save a garage roof which was in dire need of replacement... The final product was excellent, new beams, all boarded. The boys were efficient, prepared and really put in the hard work."</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">DJ</div>
-                        <div>
-                            <p class="text-white font-bold text-sm">Dan Jones</p>
-                            <p class="text-zinc-500 text-xs">Facebook Recommendation</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Review 6 -->
-                <div class="bg-zinc-900 border border-white/10 hover:border-[#1877F2]/50 transition-colors p-8 rounded-2xl relative shadow-lg">
-                    <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="absolute top-6 right-6 text-[#1877F2] text-3xl hover:scale-110 transition-transform"><i class="fab fa-facebook"></i></a>
-                    <div class="flex text-yellow-500 text-sm mb-4 gap-1">
-                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                    </div>
-                    <p class="text-zinc-300 italic mb-6 leading-relaxed">"Highly recommended! ⭐️⭐️⭐️⭐️⭐️ Contacted Eagle Eye Roofing and from quote to completing my flat roof replacement; the communication and quality of work was faultless. Thank you!"</p>
-                    <div class="flex items-center gap-3">
-                        <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">BM</div>
-                        <div>
-                            <p class="text-white font-bold text-sm">Beth Morris</p>
-                            <p class="text-zinc-500 text-xs">Facebook Recommendation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Expandable Reviews Section (Hidden by Default) -->
-            <div id="more-reviews" class="hidden">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16 text-left">
-                    
-                    <!-- THE REMAINING 30 REVIEWS -->
-                    <!-- Review 7 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Just had my flat roof replaced. The guys were super friendly and worked so hard to get it done in a day. The roof looks fantastic. Would highly recommend them for great quality work and a great price."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">SA</div><div><p class="text-white font-bold text-sm">Suzanne Adams</p></div></div>
-                    </div>
-
-                    <!-- Review 8 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"When we had some bad weather, I had some bad leaks come through my roof. These gents came to my rescue as soon as I called... fixed all the problems for me straight away! I honestly can't recommend these guys enough."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">SF</div><div><p class="text-white font-bold text-sm">Sam Figgures</p></div></div>
-                    </div>
-
-                    <!-- Review 9 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Highly recommend this company had a leak on my roof called Leon to come and have a look,turned up the day and time he said no messing me about, give a really good price and returned within a few days..."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">RB</div><div><p class="text-white font-bold text-sm">Rhys Barnes</p></div></div>
-                    </div>
-
-                    <!-- Review 10 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Highly recommend these guys, I have just moved to a new property and needed a bit of work. Leejay was prompt, efficient and did and amazing job. A great job from a great company. Thanks guys."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">BD</div><div><p class="text-white font-bold text-sm">Beth Davies</p></div></div>
-                    </div>
-
-                    <!-- Review 11 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Had the old ridge tiles replaced with a new dry ridge system and a few broken slates sorted too. Really happy with the work—done quickly, looks great, and everything was left clean and tidy."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">GK</div><div><p class="text-white font-bold text-sm">Gavin Kelliher</p></div></div>
-                    </div>
-
-                    <!-- Review 12 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Genuine guys, did a good job and explained it all. Took photos to show before and after's, so no hidden surprises 👍"</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">NA</div><div><p class="text-white font-bold text-sm">Nast Assja</p></div></div>
-                    </div>
-
-                    <!-- Review 13 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Had wind damage to roof which needed sorting, the guys turned up sharpish and identified further issues... Always kept us in the loop with what was needed and the finish is even better than it was before."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">LT</div><div><p class="text-white font-bold text-sm">Liam Thomas</p></div></div>
-                    </div>
-
-                    <!-- Review 14 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Recently contacted eagle eye roofing to install a led flashing for me! Within 2 hours they had come to save the day, could not recommend this company enough!⭐️⭐️⭐️⭐️⭐️"</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">KJ</div><div><p class="text-white font-bold text-sm">Kyle Jenkins</p></div></div>
-                    </div>
-
-                    <!-- Review 15 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Excellent job on our roof and dormer cladding. Hard workers and fun to have around. Just get plenty of tea and sugar in"</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">PB</div><div><p class="text-white font-bold text-sm">Paul Buck</p></div></div>
-                    </div>
-
-                    <!-- Review 16 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Came to apply silicone to gaps between the porch roof and wall to prevent leaking! Came and completed the work free of charge... lovely gesture! Has given further advice on what will be required... thank you!"</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">HS</div><div><p class="text-white font-bold text-sm">Helena Smith</p></div></div>
-                    </div>
-
-                    <!-- Review 17 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Wouldn't hesitate to recommend Leejay, Leon and boys. Did a fantastic job on my roof, reliable and turned up in the most horrendous weather conditions."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">JD</div><div><p class="text-white font-bold text-sm">Janine Davies</p></div></div>
-                    </div>
-
-                    <!-- Review 18 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Fantastic service! They fixed a roof tile for me quickly and did an excellent job. Very professional and efficient. Would definitely use them again. If you are looking roof work to be done these are the boys to call."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AG</div><div><p class="text-white font-bold text-sm">Alex Gluyas</p></div></div>
-                    </div>
-                    
-                    <!-- Review 19 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Leejay and the team done a fantastic job on my guttering and I would recommend him and his company for all roofing and building works."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AG</div><div><p class="text-white font-bold text-sm">Ashley Craig Griffiths</p></div></div>
-                    </div>
-                    
-                    <!-- Review 20 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Highly recommend Leejay and EagleEye Roofing. Came out to do a repair on the roof on short notice and sorted the issue straight away"</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AH</div><div><p class="text-white font-bold text-sm">Aaran Holman</p></div></div>
-                    </div>
-                    
-                    <!-- Review 21 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Highly recommend leejay and the boys, rang yesterday to see if they could help and within a few hours leejay was up to have a look and by today lunchtime my roof was patched up and good as new..."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">KS</div><div><p class="text-white font-bold text-sm">Kieran Southard</p></div></div>
-                    </div>
-                    
-                    <!-- Review 22 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Leon and Leejay replaced our aging Velux and carried out some essential roof maintenance including replacing all ridge tiles... We are very happy with the workmanship and they even kindly did a couple of extra jobs."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">SW</div><div><p class="text-white font-bold text-sm">Stuart Williams</p></div></div>
-                    </div>
-
-                    <!-- Review 23 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"over the moon with these boy, Leon & Leejay. Thank you so much lads for fixing my roof, excellent work, no more leaks & the price was amazing. I would recommend eagle eye roofing to my friends & family."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">GS</div><div><p class="text-white font-bold text-sm">Gloria Sillman</p></div></div>
-                    </div>
-
-                    <!-- Review 24 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Lee was brilliant! We had leaks in a flat roof - it wasn't a huge job so I wasn't expecting such a quick response. Lee came out the same day called scoped the job, gave me a reasonable price and was back fixing the problems."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AS</div><div><p class="text-white font-bold text-sm">Alexandra Simmons</p></div></div>
-                    </div>
-
-                    <!-- Review 25 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Messaged on the Thursday, came out on the Friday... Leon and Leejay were thorough of their job from start to finish, my grandparents had nothing but good to say - very caring towards my 2 very ill grandparents."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">KH</div><div><p class="text-white font-bold text-sm">Kaitlin Hopkins</p></div></div>
-                    </div>
-
-                    <!-- Review 26 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"highly recommend. weather hasn't been good but they kept in constant contact to update me and was here when they said. very quick and professional. couldn't ask fot better."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">SJ</div><div><p class="text-white font-bold text-sm">Savannah Jeffreys</p></div></div>
-                    </div>
-
-                    <!-- Review 27 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Couldn’t recommend the boys at EagleEye Roofing and Building enough👏 Needed my chimney taken down and within a couple of days they were able to squeeze me in to get it complete. Top job done as always! Cheers boys👊"</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">ES</div><div><p class="text-white font-bold text-sm">Ethan Smith</p></div></div>
-                    </div>
-
-                    <!-- Review 28 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"5 Stars – Excellent Service. Called Eagle Eye Roofing and they came out straight away. Assessed the repair, knew exactly what needed doing, ordered the necessary parts, and returned promptly to fix it. Fast, efficient, and professional!"</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">CS</div><div><p class="text-white font-bold text-sm">Chris Sheehan</p></div></div>
-                    </div>
-
-                    <!-- Review 29 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"leejay and his team were very good, removed my chimney and fixed the leak I had coming through the roof. very affordable and completed the job well before time. couldn't recommend them enough."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AF</div><div><p class="text-white font-bold text-sm">Alex Fender</p></div></div>
-                    </div>
-
-                    <!-- Review 30 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Wow. We can't thank you boys enough for the outstanding work you've done on our latest project.. from the start the communication has been clear and consistent.. the professional advice given has probably saved us a small fortune."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">CE</div><div><p class="text-white font-bold text-sm">Claire Edwards</p></div></div>
-                    </div>
-
-                    <!-- Review 31 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"great bunch of lads repaired my roof within 24hrs of me calling them outstanding service and amazing price highly recommended"</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">ML</div><div><p class="text-white font-bold text-sm">Matthew Lannen</p></div></div>
-                    </div>
-                    
-                    <!-- Review 32 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"We’ve recently had EagleEye Roofing and Building come and cover a roof for us on a massive project and I have to say the team were outstanding from start to finish, we couldn’t recommend them enough! So much so that we’ve already booked them in on our next big project!"</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">LL</div><div><p class="text-white font-bold text-sm">Llcarpentry LTD</p></div></div>
-                    </div>
-
-                    <!-- Review 33 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Would like to thank EagleEye Roofing and Building Leon Gluyas Leejay Gluyas for coming and sorting the roof out... no messing around got the job done ☑️ Thank you boys Highly recommended!"</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">KA</div><div><p class="text-white font-bold text-sm">Kobi Ali</p></div></div>
-                    </div>
-                    
-                    <!-- Review 34 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"I couldn’t think of a better roofing company than EagleEye Roofing and Building. They were super efficient and friendly. I would have them back in a heartbeat."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">LJ</div><div><p class="text-white font-bold text-sm">Lloyd James</p></div></div>
-                    </div>
-
-                    <!-- Review 35 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"I can’t thank Eagle Eye Roofing and Building enough for the help they gave my 84-year-old Nan. She had a few tiles that had slipped from her roof, and they responded quickly, were incredibly reliable, and got the job done with no fuss."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">KM</div><div><p class="text-white font-bold text-sm">Kimberly Meredith</p></div></div>
-                    </div>
-
-                    <!-- Review 36 -->
-                    <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg">
-                        <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                        <p class="text-zinc-300 italic mb-6 leading-relaxed">"Highly recommend! They did a job for us recently & we are so pleased with the work they’ve done. Professional throughout & great communication from day 1. Came out asap to give us a quote when we had a leak so they could assess the issue."</p>
-                        <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AF</div><div><p class="text-white font-bold text-sm">Alice Frances</p></div></div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Show More Reviews Button -->
-            <div class="mt-8 mb-24">
-                <button id="show-more-reviews-btn" onclick="toggleReviews()" class="px-8 py-4 border border-yellow-600/50 text-yellow-500 rounded-full font-bold hover:bg-yellow-600 hover:text-black transition-colors shadow-[0_0_15px_rgba(212,175,55,0.3)]">
-                    Load All 36 Reviews
-                </button>
-            </div>
-            
-            <div class="bg-zinc-900 border border-white/10 hover:border-yellow-600/30 transition-colors rounded-2xl p-12 max-w-lg mx-auto shadow-2xl">
-                <div class="flex justify-center mb-6">
-                    <span class="text-5xl font-bold font-sans">
-                        <span class="text-[#4285F4]">G</span><span class="text-[#EA4335]">o</span><span class="text-[#FBBC05]">o</span><span class="text-[#4285F4]">g</span><span class="text-[#34A853]">l</span><span class="text-[#EA4335]">e</span>
-                    </span>
-                </div>
-                <div class="flex justify-center space-x-2 text-yellow-500 text-2xl mb-6">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4 text-white">Google Reviews Coming Soon</h3>
-                <p class="text-zinc-400">We are currently integrating our verified Google Reviews. Check back shortly to see what our clients have to say about our work!</p>
-            </div>
-        </section>
-
-        <!-- LOCATIONS TAB -->
-        <section id="content-locations" class="tab-content py-24 px-4 w-full">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-16">
-                    <p class="text-yellow-500 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Service Areas</p>
-                    <h2 class="text-4xl md:text-5xl brand-font font-bold gold-gradient drop-shadow-lg">AREAS WE COVER</h2>
-                    <div class="w-24 h-1 gold-bg mx-auto mt-6 rounded-full opacity-50"></div>
-                    <p class="text-zinc-300 max-w-3xl mx-auto mt-8 leading-relaxed md:text-lg font-light">
-                        Based in Swansea, Eagle Eye Roofing & Building proudly serves homeowners and businesses across South and West Wales. Whether you need an emergency roof repair, a brand new flat roof, or general building services, our expert team is ready to travel to your doorstep.
-                    </p>
-                </div>
-
-                <!-- SEO Locations Grid -->
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mb-20">
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Swansea</h3>
-                    </div>
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Mumbles</h3>
-                    </div>
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Morriston</h3>
-                    </div>
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Neath</h3>
-                    </div>
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Port Talbot</h3>
-                    </div>
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Porthcawl</h3>
-                    </div>
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Gorseinon</h3>
-                    </div>
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Pontarddulais</h3>
-                    </div>
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Carmarthen</h3>
-                    </div>
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Ammanford</h3>
-                    </div>
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Llanelli</h3>
-                    </div>
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Bridgend</h3>
-                    </div>
-                    <div class="bg-zinc-900 border border-white/10 p-6 rounded-xl text-center hover:border-yellow-600/50 transition-all hover:-translate-y-2 group cursor-default shadow-lg">
-                        <i class="fas fa-map-marker-alt text-yellow-600/50 group-hover:text-yellow-500 text-3xl mb-4 transition-colors"></i>
-                        <h3 class="text-lg font-bold text-white tracking-wide">Ystradgynlais</h3>
-                    </div>
-                </div>
-
-                <!-- Google Map & CTA -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-zinc-900/50 border border-white/5 rounded-3xl overflow-hidden p-4 md:p-8">
-                    <div class="w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl border border-white/10 relative grayscale hover:grayscale-0 transition-all duration-700">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158309.28292850382!2d-4.10303102432832!3d51.642646241320364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486eec9b1e95e7c5%3A0xcb4c6e917d5e4a0!2sSwansea!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                    
-                    <div class="text-center lg:text-left">
-                        <h3 class="text-3xl brand-font font-bold mb-4 text-white">Don't see your town?</h3>
-                        <p class="text-zinc-400 mb-8 leading-relaxed">
-                            While these are our most frequent service areas, our team travels extensively throughout South Wales to ensure homeowners get the premium roofing work they deserve. If you are near any of these locations, we can likely reach you.
-                        </p>
-                        <button onclick="switchTab('contact')" class="gold-bg text-black px-8 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(212,175,55,0.3)] inline-flex items-center gap-3">
-                            <i class="fas fa-envelope"></i> Contact Us To Check
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ TAB -->
-        <section id="content-faq" class="tab-content py-24 px-4 w-full">
-            <div class="max-w-4xl mx-auto">
-                <div class="text-center mb-16">
-                    <p class="text-yellow-500 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Your Questions Answered</p>
-                    <h2 class="text-4xl md:text-5xl brand-font font-bold gold-gradient drop-shadow-lg">FREQUENTLY ASKED QUESTIONS</h2>
-                    <div class="w-24 h-1 gold-bg mx-auto mt-6 rounded-full opacity-50"></div>
-                </div>
-
-                <div class="space-y-4">
-                    <!-- FAQ Item 1 -->
-                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
-                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
-                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">Do you offer free, no-obligation quotes?</h3>
-                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
-                        </button>
-                        <div class="faq-answer bg-black/30">
-                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
-                                Absolutely. We believe in total transparency. We will come out to inspect your property, assess the required work, and provide a comprehensive, completely free quote before any commitment is made.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 2 -->
-                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
-                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
-                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">Do you handle emergency roof repairs?</h3>
-                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
-                        </button>
-                        <div class="faq-answer bg-black/30">
-                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
-                                Yes. South Wales weather can be unpredictable. If you have storm damage, missing slates, or a severe leak causing internal water damage, call us immediately. We prioritize emergency calls to get your home watertight as quickly as possible.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 3 -->
-                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
-                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
-                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">How long does a full roof replacement take?</h3>
-                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
-                        </button>
-                        <div class="faq-answer bg-black/30">
-                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
-                                While it depends heavily on the size of the property and the weather, a standard semi-detached full re-roof usually takes between 3 to 5 days. We work efficiently while ensuring top-tier craftsmanship, and we will always keep you updated on timelines.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 4 -->
-                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
-                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
-                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">Will I need scaffolding for my project?</h3>
-                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
-                        </button>
-                        <div class="faq-answer bg-black/30">
-                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
-                                For full re-roofs, chimney removals, and extensive fascia work, scaffolding is legally required for health and safety. If scaffolding is needed, we will arrange it completely and factor it into your upfront quote so there are no hidden surprises. Minor repairs can sometimes be done via ladders depending on safe access.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 5 -->
-                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
-                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
-                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">What kind of flat roofing do you install?</h3>
-                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
-                        </button>
-                        <div class="faq-answer bg-black/30">
-                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
-                                We specialize in modern flat roofing systems that outlast traditional felt. We install highly durable EPDM rubber roofing and GRP (Fiberglass) systems. Both are incredibly resistant to Welsh rain, won't crack under sun exposure, and are perfect for garages, extensions, and dormers.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 6 -->
-                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
-                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
-                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">Are you fully insured and do you guarantee your work?</h3>
-                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
-                        </button>
-                        <div class="faq-answer bg-black/30">
-                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
-                                Yes. We are fully insured for all roofing and building works. Furthermore, as a family-run business, we stake our reputation on every job. We offer guarantees on all major works (such as new flat roofs and full re-roofs) giving you complete peace of mind.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 7 -->
-                    <div class="bg-zinc-900 border border-white/10 rounded-xl overflow-hidden shadow-lg transition-colors hover:border-yellow-600/30">
-                        <button onclick="toggleFAQ(this)" class="w-full text-left px-6 py-5 flex items-center justify-between focus:outline-none group">
-                            <h3 class="font-bold text-lg text-white group-hover:text-yellow-500 transition-colors">Do you ask for payment upfront?</h3>
-                            <i class="fas fa-chevron-down text-zinc-500 transition-transform duration-300"></i>
-                        </button>
-                        <div class="faq-answer bg-black/30">
-                            <p class="px-6 pb-6 text-zinc-400 leading-relaxed">
-                                No, absolutely not. We have total confidence in the quality of our craftsmanship and believe in building trust from day one. We do not ask for deposits or any payment upfront. We simply complete the work to the highest standard, and you only pay the invoice once the job is fully finished and you are 100% satisfied.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="mt-16 text-center">
-                    <p class="text-zinc-400 mb-6">Still have a question that isn't answered here?</p>
-                    <button onclick="switchTab('contact')" class="gold-bg text-black px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
-                        Contact Us Directly
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Lightbox Modal -->
-        <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/95 hidden items-center justify-center px-4 opacity-0 transition-opacity duration-300" onclick="closeLightbox()">
-            <button class="absolute top-6 right-6 text-white/50 hover:text-white text-5xl transition-colors z-50">&times;</button>
-            <img id="lightbox-img" src="" class="max-h-[90vh] max-w-full object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300 hidden">
-            <video id="lightbox-vid" src="" class="max-h-[90vh] max-w-full rounded-lg shadow-2xl scale-95 transition-transform duration-300 hidden" controls playsinline></video>
-        </div>
-
-        <!-- CONTACT / GET A QUOTE TAB -->
-        <section id="content-contact" class="tab-content py-16 px-4 max-w-4xl mx-auto w-full">
-            <div class="bg-zinc-900 p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-full h-1 gold-bg"></div>
-                
-                <div class="text-center mb-10">
-                    <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" class="w-24 h-24 rounded-full mx-auto mb-6 border border-yellow-600/50 logo-blend shadow-[0_0_20px_rgba(212,175,55,0.4)] object-cover" alt="Logo">
-                    <h2 class="text-3xl md:text-4xl brand-font font-bold gold-gradient mb-2">Get a Free Quote</h2>
-                    <p class="text-zinc-400">Fill out the form below and we will get back to you shortly.</p>
-                </div>
-                
-                <form action="https://formspree.io/f/mjgqzrwn" method="POST" class="space-y-6">
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <input type="text" name="name" placeholder="Full Name" required class="w-full bg-black border border-zinc-700 p-4 rounded-xl text-white focus:outline-none focus:border-yellow-500 transition-colors">
-                        <input type="tel" name="phone" placeholder="Phone Number" required class="w-full bg-black border border-zinc-700 p-4 rounded-xl text-white focus:outline-none focus:border-yellow-500 transition-colors">
-                    </div>
-                    
-                    <input type="text" name="address" placeholder="Property Address (Required for Quotes)" required class="w-full bg-black border border-zinc-700 p-4 rounded-xl text-white focus:outline-none focus:border-yellow-500 transition-colors">
-                    
-                    <select name="service" required class="w-full bg-black border border-zinc-700 p-4 rounded-xl text-white focus:outline-none focus:border-yellow-500 transition-colors appearance-none">
-                        <option value="" disabled selected>Select a Service</option>
-                        <option>Full Re-Roof</option>
-                        <option>Flat Roof</option>
-                        <option>Repairs & Maintenance</option>
-                        <option>Other Building Work</option>
-                    </select>
-                    
-                    <textarea name="message" rows="4" placeholder="Briefly describe your project..." class="w-full bg-black border border-zinc-700 p-4 rounded-xl text-white focus:outline-none focus:border-yellow-500 transition-colors"></textarea>
-                    
-                    <button type="submit" class="w-full gold-bg text-black font-bold py-4 rounded-xl hover:opacity-90 uppercase tracking-widest transition-transform transform hover:scale-[1.02] shadow-lg">Send Message</button>
-                </form>
-                
-                <div class="mt-12 pt-8 border-t border-white/5 flex flex-col items-center">
-                    <p class="text-zinc-500 mb-4 text-sm uppercase tracking-widest">Connect with us</p>
-                    <div class="flex gap-8">
-                        <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="text-zinc-400 hover:text-[#1877F2] text-4xl transition-colors"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/eagleeye_roofingbuilding/" target="_blank" class="text-zinc-400 hover:text-[#E4405F] text-4xl transition-colors"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-zinc-950 py-12 border-t border-white/5 text-center flex flex-col items-center">
-        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Logo" class="h-16 w-16 object-cover rounded-full mb-4 logo-blend border border-yellow-600/30">
-        <p class="text-yellow-500 font-bold mb-2 tracking-widest uppercase text-sm">Eagle Eye Roofing & Building</p>
-        <p class="text-zinc-500 text-sm tracking-widest uppercase mb-1">Swansea & South Wales</p>
-        <p class="text-zinc-600 text-xs tracking-wider">Incorporated 12 March 2025</p>
-    </footer>
-
-    <!-- Floating Phone Button -->
-    <div id="floating-phone-btn" onclick="handlePhoneClick()" class="fixed bottom-6 right-6 z-40 bg-gradient-to-r from-yellow-600 to-yellow-400 text-black h-14 w-14 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.6)] cursor-pointer hover:scale-105 transition-all duration-300 overflow-hidden flex items-center group">
-        <div class="w-14 h-14 flex items-center justify-center shrink-0">
-            <i class="fas fa-phone text-xl"></i>
-        </div>
-        <span id="floating-phone-num" class="font-bold text-lg whitespace-nowrap opacity-0 w-0 transition-all duration-300">07753 865817</span>
-    </div>
-
-    <!-- JavaScript Interactions -->
-    <script>
-        window.addEventListener('load', () => { 
-            setTimeout(() => {
-                const splash = document.getElementById('splash-screen');
-                splash.style.opacity = '0';
-                setTimeout(() => splash.style.display = 'none', 500);
-            }, 2000); 
-        });
-
-        function switchTab(tab) {
-            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-            document.getElementById(`content-${tab}`).classList.add('active');
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        }
-
-        function toggleMobileMenu() { 
-            document.getElementById('mobile-menu').classList.toggle('hidden'); 
-        }
-        
-        function toggleReviews() {
-            var moreReviewsDiv = document.getElementById("more-reviews");
-            var btn = document.getElementById("show-more-reviews-btn");
-            
-            if (moreReviewsDiv.classList.contains("hidden")) {
-                moreReviewsDiv.classList.remove("hidden");
-                btn.innerText = "Show Less Reviews";
-            } else {
-                moreReviewsDiv.classList.add("hidden");
-                btn.innerText = "Load All 36 Reviews";
-                window.scrollTo({top: document.getElementById('content-reviews').offsetTop, behavior: 'smooth'});
-            }
-        }
-
-        // FAQ Toggle Function
-        function toggleFAQ(button) {
-            const content = button.nextElementSibling;
-            const icon = button.querySelector('i');
-            
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                content.style.opacity = 0;
-                icon.classList.remove('rotate-180');
-            } else {
-                content.style.maxHeight = content.scrollHeight + "px";
-                content.style.opacity = 1;
-                icon.classList.add('rotate-180');
-            }
-        }
-        
-        function openLightbox(src, isVideo = false) {
-            const modal = document.getElementById('lightbox-modal');
-            const img = document.getElementById('lightbox-img');
-            const vid = document.getElementById('lightbox-vid');
-            
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
-            document.body.style.overflow = 'hidden'; 
-            
-            setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                if(isVideo) {
-                    img.classList.add('hidden');
-                    vid.classList.remove('hidden');
-                    vid.src = src;
-                    vid.classList.remove('scale-95');
-                    vid.classList.add('scale-100');
-                    vid.play();
-                } else {
-                    vid.classList.add('hidden');
-                    vid.pause();
-                    img.classList.remove('hidden');
-                    img.src = src;
-                    img.classList.remove('scale-95');
-                    img.classList.add('scale-100');
-                }
-            }, 10);
-        }
-
-        function closeLightbox() {
-            const modal = document.getElementById('lightbox-modal');
-            const img = document.getElementById('lightbox-img');
-            const vid = document.getElementById('lightbox-vid');
-            
-            modal.classList.add('opacity-0');
-            img.classList.remove('scale-100');
-            img.classList.add('scale-95');
-            vid.classList.remove('scale-100');
-            vid.classList.add('scale-95');
-            
-            setTimeout(() => {
-                modal.classList.add('hidden');
-                modal.classList.remove('flex');
-                document.body.style.overflow = 'auto'; 
-                vid.pause(); 
-                vid.src = ""; 
-            }, 300);
-        }
-
-        let phoneExpanded = false;
-        function handlePhoneClick() {
-            const btn = document.getElementById('floating-phone-btn');
-            const num = document.getElementById('floating-phone-num');
-            
-            if (!phoneExpanded) {
-                btn.classList.remove('w-14');
-                btn.classList.add('w-48');
-                num.classList.remove('opacity-0', 'w-0');
-                num.classList.add('opacity-100', 'w-auto', 'pr-6');
-                phoneExpanded = true;
-                
-                setTimeout(() => {
-                    if(phoneExpanded) {
-                        btn.classList.add('w-14');
-                        btn.classList.remove('w-48');
-                        num.classList.add('opacity-0', 'w-0');
-                        num.classList.remove('opacity-100', 'w-auto', 'pr-6');
-                        phoneExpanded = false;
-                    }
-                }, 5000);
-            } else {
-                window.location.href = 'tel:07753865817';
-            }
-        }
-
-        let currentSlide = 1;
-        const totalSlides = 4;
-        
-        setInterval(() => {
-            document.querySelectorAll('.hero-slide').forEach(slide => {
-                slide.classList.replace('opacity-100', 'opacity-0');
-            });
-            
-            currentSlide = currentSlide >= totalSlides ? 1 : currentSlide + 1;
-            document.getElementById(`hero-slide-${currentSlide}`).classList.replace('opacity-0', 'opacity-100');
-        }, 5000);
-    </script>
-</body>
-</html>
+Eagle Eye To do list -
+
+Google Reviews
+Domain purchased
+
+
+1. Trust Badges & Guarantees (Crucial for Roofers)
+Roofing is an expensive investment for homeowners. We currently say "Expertise You Can Trust," but we should show it. We should add a sleek banner or section on the homepage highlighting things like:
+
+"Fully Insured & Qualified"
+
+"10-Year Guarantee on All New Roofs" (or whatever your standard guarantee is)
+
+"Free, No-Obligation Surveys"
+
+If you are on Checkatrade, TrustMark, or CHAS, adding those logos adds massive instant credibility.
+
+2. A "Sticky" Mobile Call Button
+Over 70% of your traffic will likely come from mobile phones (people standing in their driveway looking up at a leak). While the contact form is great, having a floating, glowing "Call Now" button that stays at the bottom right of the screen only on mobile phones ensures they are always one tap away from ringing you, no matter where they scroll.
+
+3. A Dedicated "About The Family" Section
+You mention being "Family Run," which is a huge selling point鈥攑eople trust families over faceless corporations. Adding a short paragraph on the homepage about your history, how long you've been doing this, and your personal commitment to South Wales would build a great connection before they even call.
+
+4. Visual Services Grid
+Right now, your services are a bulleted list. We could upgrade that into a beautiful grid of 4-6 cards (e.g., one for Slate/Tile, one for Flat Roofs, one for Chimneys, one for Gutters) with little icons. It makes it easier for people to immediately recognize you do exactly what they need.
+
+5. UK Cookie Consent Banner
+Since you are operating in the UK, having a simple, dark-themed, unobtrusive "We use cookies" popup at the bottom of the screen makes the site look compliant and highly professional.
+
+
+After care
+
+Google reviews
+
+Facebook reviews
+
+What I鈥檇 recommend for YOUR setup
+
+Keep:
+
+GitHub = code only
+Netlify = hosting
+Sirv = images + videos
+
+So your structure becomes:
+
+Review app for facebook 
+https://www.facebook.com/profile.php?id=61575037616597&sk=reviews
+
+
+Suzanne Adams  recommends EagleEye Roofing and Building .
+epSnrtoosd9li9g28
+0
+ 
+ii69
+c
+uu18u
+a
+i9542l7ltf157
+2
+r
+71f
+h
+l030g6fuhh
+M
+ 路
+Just had my flat roof replaced. The guys were super friendly and worked so hard to get it done in a day. The roof looks fantastic. Would highly recommend them for great quality work and a great price .
+
+Nast Assja  recommends EagleEye Roofing and Building .
+epSnrtoosd9li9g2
+u
+0
+y
+ii69
+a
+uu18
+F
+b
+i9542
+ 
+7ltf157
+1
+r
+71f
+r
+l030g6fuhh
+e
+ 路
+Genuine guys, did a good job and explained it all. Took photos to show before and after's, so no hidden surprises 馃憤
+
+Liam Thomas  recommends EagleEye Roofing and Building .
+epSnrtoosd9li9g2
+r
+6
+r
+ii69
+u
+uu18u
+e
+i9542
+y
+7ltf157
+ 
+b
+71f
+a
+l030g6fuhh
+F
+ 路
+Had wind damage to roof which needed sorting, the guys turned up sharpish and identified further issues that needed rectifying before the damage could be fixed properly. Always kept us in the loop with what was needed and the finish is even better than it was before the damage. Even cleaned up all leftover mess! Highly recommended, will definitely trust with any work in future 馃挴
+
+Kyle Jenkins  recommends EagleEye Roofing and Building .
+tsooenSpdr3c81c24g
+r
+107
+e
+87f
+u
+51a
+5
+2i7ic
+b
+F
+y
+7
+ 
+27
+r
+4
+a
+ga1ii1797223l8
+ 路
+Recently contacted eagle eye roofing to install a led flashing for me! 
+Within 2 hours they had come to save the day, could not recommend this company enough!猸愶笍猸愶笍猸愶笍猸愶笍猸愶笍
+
+
+Paul Buck  recommends EagleEye Roofing and Building .
+tsooenSpdr3c81c24g
+y
+107
+a
+87f
+a
+51a
+6
+2i7ic
+n
+J
+ 
+7
+2
+27
+u
+4
+r
+ga1ii1797223l8
+ 路
+Excellent job on our roof and dormer cladding.
+Hard workers and fun to have around.
+Just get plenty of tea and sugar in
+
+Helena Smith  recommends EagleEye Roofing and Building .
+tsooenSpdr3c81c24g
+r
+107
+a
+87f
+u
+51a
+6
+2i7ic
+n
+J
+y
+7
+ 
+27l4
+a
+ga1ii1797223l8
+ 路
+Came to apply silicone to gaps between the porch roof and wall to prevent leaking! Came and completed the work free of charge, due to difficulties fitting us in prior to Christmas, which was a lovely gesture! Has given further advice on what will be required if the issue continues so that we know what to do! thank you very much for your help.
+
+Janine Davies  recommends EagleEye Roofing and Building .
+tsooenSpdr3c81c24g
+ 
+107
+e
+87
+D
+e
+5
+0
+a
+ 
+2i7ic
+m
+e
+2
+c
+,
+27
+b
+2
+r
+ga
+5
+ii179
+2
+22
+2
+l8
+ 路
+Wouldn't hesitate to recommend Leejay, Leon and boys.   Did a fantastic job on my roof, reliable and turned up in the most horrendous weather conditions.
+
+Alex Gluyas  recommends EagleEye Roofing and Building .
+tsooenSpdr3c81c24g
+ 
+107
+e
+87
+N
+e
+5
+0
+a
+ 
+2i7ic
+m
+o
+9
+v
+,
+27
+b
+2
+r
+ga
+5
+ii179
+2
+22
+1
+l8
+ 路
+Fantastic service! They fixed a roof tile for me quickly and did an excellent job. Very professional and efficient. Would definitely use them again. If you are looking roof work to be done these are the boys to call.猸愶笍猸愶笍猸愶笍猸愶笍猸愶笍
+
+
+
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Facebook
+Luke John  recommends EagleEye Roofing and Building .
+tsooenSpdr3c81c24g
+ 
+107
+e
+87
+N
+e
+5
+0
+a
+ 
+2i7ic
+m
+o
+9
+v
+,
+27
+b
+2
+r
+ga
+5
+ii179
+2
+22
+1
+l8
+ 路
+Lee and the whole team are brilliant! Came to the house to view the roof one day after me contacting him, beat an original quote I had (for even more work!) from another company I had been waiting over three months to start the work. Within 10 days, I had scaffolding up, old roof ripped off, new roof put on, attic insulated and new waterworks! 10/10 would recommend to anyone!
+
+Ashley Craig Griffiths  recommends EagleEye Roofing and Building .
+otsdSpneorg9
+c
+16
+e
+o
+3a
+0
+lm
+5
+uug
+ 
+cl
+t
+b
+a1530893
+ 
+f76
+2
+m
+r
+mh
+O
+f
+2
+m2
+2
+t4
+,
+m1h
+ 路
+Leejay and the team done a fantastic job on my guttering and I would recommend him and his company for all roofing and building works.
+
+
+Aaran Holman  recommends EagleEye Roofing and Building .
+otsdSpneorg9
+e
+16
+m
+t
+3
+b
+0
+lm
+5
+uug
+,
+cl
+p
+e
+a1530
+e
+93
+ 
+f76
+2
+m
+r
+2
+h
+S
+f
+2
+m2
+ 
+t4
+8
+m1h
+ 路
+Highly recommend Leejay and EagleEye Roofing. Came out to do a repair on the roof on short notice and sorted the issue straight away
+
+Kieran Southard  recommends EagleEye Roofing and Building .
+otsdSpneorg9
+e
+16
+m
+t
+3
+b
+0
+lm
+5
+uug
+,
+cl
+p
+e
+a1530
+e
+93
+ 
+f76
+2
+m
+r
+2
+h
+S
+f
+1
+m2
+ 
+t4
+7
+m1h
+ 路
+Highly recommend leejay and the boys, rang yesterday to see if they could help and within a few hours leejay was up to have a look and by today lunchtime my roof was patched up and good as new as it can be for now. Can鈥檛 thank the boys enough for there work and timing.
+
+Stuart Williams  recommends EagleEye Roofing and Building .
+dnoSroetps51l
+l
+mc
+u
+0f
+y
+mm8t
+2
+c459392
+1
+g0
+5
+2
+2hm
+,
+3c
+ 
+7fiu
+0
+ 
+2
+t
+J
+07atl4i
+ 路
+Leon and Leejay replaced our aging Velux and carried out some essential roof maintenance including replacing all ridge tiles out the back of our property. 
+From initial contact the company were very efficient in getting back to me, promptly coming out to price up the job (and they actually turn up when they say they will which is great!!)  Quote was back same day and they undertook the work a week later.
+We are very happy with the workmanship and they even kindly did a couple of 'whilst you up there can you' jobs for us which was really really appreciated.
+We are happy to recommend EagleEye roofing - Leon and Leejay, and have already booked them to come back in a week to fix another roofing problem at the front of our house.
+Thank you so much!馃憤 See less
+
+
+Gloria Sillman  recommends EagleEye Roofing and Building .
+dnoSroetps51l
+l
+mc
+u
+0f
+y
+mm8t
+2
+c459392
+8
+g0
+5
+2
+2hm
+,
+3c
+ 
+7fiu
+0
+ 
+1
+t
+J
+07atl4i
+ 路
+over the moon with these boy, Leon & Leejay. Thank you so much lads for fixing my roof, excellent work, no more leaks  & the price was amazing.  I would recommend  eagle eye roofing to my friends & family. thanx again guys.
+
+Lisa Phillips  recommends EagleEye Roofing and Building .
+dnoSroetps51l
+u
+mc
+J
+0f
+l
+mm8t
+2
+c459392
+5
+g0
+5
+2
+2hm
+,
+3c
+ 
+7fiu
+0
+y
+ 
+tl07atl4i
+ 路
+I cannot thank these enough. Had to have chimney removed and Leejay Gluyas was there sorting our roof straight away for us. 
+Anyone that needs a new roof please contact these. Amazing company and really cannot thank you enough. I was so stressed and you sorted the roof so quickly. Leejay was at the house two minutes after phoning him 馃ぃ 
+Thank you 馃檹馃檹馃檹鉂わ笍鉂わ笍鉂わ笍
+
+
+Alexandra Simmons  recommends EagleEye Roofing and Building .
+Sdontrospe
+ 
+2
+87f8ga221
+ 
+afl
+y
+i190g
+2
+cl9
+l
+0
+2
+9c8l
+0
+67c3h
+u
+6
+5
+l60tm
+,
+49
+J
+ 路
+Lee was brilliant!
+We had leaks in a flat roof - it wasn't a huge job so I wasn't expecting such a quick response.
+Lee came out the same day called scoped the job, gave me a reasonable price and was back fixing the problems within days. He actually fixed more than he originally quoted for, but wouldn't increase the cost.
+Lee is professional, efficient, does a great job and is a lovely guy to boot.
+I highly recommend you check Eagle Eye Roofing out for any roof issues you may have - you'll be glad you did.
+
+Kaitlin Hopkins  recommends EagleEye Roofing and Building .
+Sdontrospe
+1
+7
+87
+J
+8ga221
+ 
+afl
+ 
+i190g
+2
+cl9
+e
+0
+2
+9c8l
+0
+67c3h
+n
+6
+5
+l60tm
+,
+49
+u
+ 路
+Messaged on the Thursday, came out on the Friday and the whole job was completed by Saturday afternoon ( due to the weather couldn鈥檛 finish Friday ) but Leon and Leejay were thorough of their job from start to finish, my grandparents had nothing but good to say - very caring towards my 2 very ill grandparents who needed their roof fixed asap. 
+Thanks again 100% recommend 馃槉
+
+
+Savannah Jeffreys  recommends EagleEye Roofing and Building .
+Sdontrospe
+1
+3
+87
+J
+8ga221
+ 
+afl
+ 
+i190g
+2
+cl9
+e
+0
+2
+9c8l
+0
+67c3h
+n
+6
+5
+l60tm
+,
+49
+u
+ 路
+highly recommend. weather hasn't been good but they kept in constant contact to update me and was here when they said. very quick and professional. couldn't ask fot better.
+
+
+Ethan Smith  recommends EagleEye Roofing and Building .
+potesorndS1
+1
+ 
+2
+n
+47ig90
+2
+fm4ai12
+e
+i1116t
+3
+ug5
+u
+2
+h64g1862
+,
+ 
+60l
+0
+f
+J
+t
+5
+ 路
+Couldn鈥檛 recommend the boys at EagleEye Roofing and Building enough馃憦
+Needed my chimney taken down and within a couple of days they were able to squeeze me in to get it complete. Top job done as always! Cheers boys馃憡
+
+
+Dan Jones  recommends EagleEye Roofing and Building .
+potesorndS1
+3
+32
+y
+47ig90
+2
+fm4ai12
+ 
+i1116t
+1
+ug5
+a
+2
+h64g1862
+,
+ 
+60l
+0
+f
+M
+t
+5
+ 路
+Leejay and the boys came and helped save a garage roof which was in dire need of replacement.
+They were happy to talk about different ideas and explain what they can do. The final product was excellent, new beams, all boarded. The boys were efficient, prepared and really put in the hard work which has led to me and my family having an accessible, dry and clean garage. 
+I highly recommend using EagleEye roofing. Good quality materials, excellent labour, arranged removal of waste and fair pricing
+Thank you Lads猸愶笍猸愶笍猸愶笍猸愶笍猸愶笍. See less
+
+Richard Robert Taylor  recommends EagleEye Roofing and Building .
+potesorndS1
+2
+32
+y
+47ig90
+2
+fm4ai12
+ 
+i1116t
+9
+ug5
+a
+2
+h64g1862
+,
+ 
+60l
+0
+f
+M
+t
+5
+ 路
+Leejay and his gang absolutely smashed it for me at short notice. I cant recommend them enough. I wasn't expecting to need a new roof until I checked the inside. a high percentage of my batterns where rotten. So glad I did it could have been a disaster. Eagleye roofing came to the rescue and we'll happy with the velux windows and extras installed for the price. 馃憣馃憣馃槑馃槑馃憦馃憦馃槂馃槂馃挭馃挭
+
+Chris Sheehan  recommends EagleEye Roofing and Building .
+osdetnpSorcgu
+2
+ 
+M
+f
+0
+6c
+y
+07413fl9t44hm5g87
+5
+77t6
+1
+hl
+a
+1
+2
+1
+,
+2
+ 
+0h6g8m5
+ 路
+5 Stars 鈥?Excellent Service
+Called Eagle Eye Roofing and they came out straight away. Assessed the repair, knew exactly what needed doing, ordered the necessary parts, and returned promptly to fix it. Fast, efficient, and professional 鈥?very pleased with the service!
+
+Alex Fender  recommends EagleEye Roofing and Building .
+osdetnpSorcgu
+2
+ 
+M
+f
+0
+6c
+y
+07413fl9t44hm5g87
+5
+77t6
+1
+hl
+a
+1
+2
+1
+,
+2
+ 
+0h6g8m5
+ 路
+leejay and his team were very good, removed my chimney and fixed the leak I had coming through the roof. very affordable and completed the job well before time. couldn't recommend them enough.
+
+Claire Edwards  recommends EagleEye Roofing and Building .
+osdetnpSorcgu
+,
+ 
+M
+f
+2
+6c
+y
+07413fl9t44hm5g87u77t6
+9
+hl
+a
+1
+5
+1
+ 
+0
+2
+0h6g8m5
+ 路
+Wow. We can't thank you boys enough for the outstanding work you've done on our latest project.. from the start the communication has been clear and consistent.. the professional advice given has probably saved us a small fortune. The amount of work you boys have got through in such a short space of time and as per the photos of the before and after is hard to believe. We also have the pleasure of being friends outside of business, but the recommendations we will give on your behalf, is 100% not masked by this friendship, it's purely on standard of work you have provided which been superb. 
+Thankyou for kind words, if the rest of our renovation goes as smoothly as this work has we will be in a fantastic place. 
+We look forward to working with you again on our future projects. 
+EagleEye roofing and building .. Thankyou from the bottom of our hearts.xx See less
+
+Matthew Lannen  recommends EagleEye Roofing and Building .
+tnpodSroesfl
+2
+946tl9u
+ 
+7
+y
+2
+ 
+066i
+2
+0
+4mi
+5
+h0
+M
+9
+a8hmgi60
+a
+gcfui317
+,
+um9
+ 路
+great bunch of lads repaired my roof within 24hrs of me calling them outstanding service and amazing price highly recommended
+
+
+Llcarpentry LTD  recommends EagleEye Roofing and Building .
+tnpodSroesfl
+2
+946tl9u
+ 
+7
+y
+2
+ 
+066i
+2
+0
+4mi
+5
+h0
+M
+8
+a8hmgi60
+a
+gcfui317
+,
+um9
+ 路
+We鈥檝e recently had EagleEye Roofing and Building  come and cover a roof for us on a massive project and I have to say the team were outstanding from start to finish, we couldn鈥檛 recommend them enough! So much so that we鈥檝e already booked them in on our next big project, good to see a local family business doing well! See you soon gents
+
+Deb Rossi  recommends EagleEye Roofing and Building .
+tnpodSroesfl
+2
+946tl9u
+ 
+7
+y
+2
+ 
+066i
+2
+0
+4mi
+5
+h0
+M
+2
+a8hmgi60
+a
+gcfui317
+,
+um9
+ 路
+I recently had my roof replaced by Eagle Eye and I couldn't be happier with the results. From the initial inspection to the final cleanup, the boys were professional, punctual, and highly skilled. They provided a clear estimate, answered all my questions, and kept me informed throughout the project. The quality of the work is outstanding 鈥?the new roof looks fantastic. I highly recommend them to anyone looking for reliable and high-quality roofing services at a reasonable price. See less
+
+Kobi Ali  recommends EagleEye Roofing and Building .
+Snooderptsf9a
+l
+A
+8c30
+r
+aih63
+i
+c
+2
+u0c
+9
+8hum1
+p
+m
+2
+511
+ 
+5
+ 
+5a4u220
+2
+01
+0
+,
+92
+ 路
+Would like to thank EagleEye Roofing and Building  Leon Gluyas Leejay Gluyas for coming and sorting the roof out at Akbaar鈥橺 no messing around got the job done 鈽戯笍 
+Thank you boys 
+Highly recommended!
+
+Lloyd James  recommends EagleEye Roofing and Building .
+Snooderptsf9a
+l
+A
+8c30
+r
+aih63
+i
+c
+2
+u0c
+5
+8hum1
+p
+m
+2
+511
+ 
+5
+ 
+5a4u220
+2
+01
+0
+,
+92
+ 路
+I couldn鈥檛 think of a better roofing company than EagleEye Roofing and Building. 
+They were super efficient and friendly. I would have them back in a heartbeat.
+
+Kimberly Meredith  recommends EagleEye Roofing and Building .
+Snooderptsf9a
+l
+A
+8c30
+r
+aih63
+i
+c
+2
+u0c
+4
+8hum1
+p
+m
+2
+511
+ 
+5
+ 
+5a4u220
+2
+01
+0
+,
+92
+ 路
+I can鈥檛 thank Eagle Eye Roofing and Building enough for the help they gave my 84-year-old Nan. She had a few tiles that had slipped from her roof, and they responded quickly, were incredibly reliable, and got the job done with no fuss. It鈥檚 not always easy to find trustworthy tradespeople, but these guys were fantastic from start to finish. We鈥檒l definitely be using them again in the future and wouldn鈥檛 hesitate to recommend them to others.
+
+Alice Frances  recommends EagleEye Roofing and Building .
+Seodrnstpo
+ 
+A
+2f0
+l
+8t8mfita88
+,
+57
+5
+04
+2
+i
+t
+2
+92ug438
+r
+i
+ 
+12
+0
+1
+p
+i
+2
+f3
+1
+2li9
+ 路
+Highly recommend! They did a job for us recently & we are so pleased with the work they鈥檝e done. Professional throughout & great communication from day 1. Came out asap to give us a quote when we had a leak so they could assess the issue. Work area was left spotless when they finished which is always a bonus馃槉 Thankyou!
+
+
+Beth Morris  recommends EagleEye Roofing and Building .
+Seodrnstpo
+ 
+A
+2f0
+l
+8t8mfita88
+,
+57
+5
+04
+2
+i
+t
+1
+92ug438
+r
+i
+ 
+12
+0
+1
+p
+i
+2
+f3
+3
+2li9
+ 路
+Highly recommended! 猸愶笍猸愶笍猸愶笍猸愶笍猸愶笍 
+Contacted Eagle Eye Roofing and from quote to completing my flat roof replacement; the communication and quality of work was faultless. Thank you!
+
+
+Sam Figgures  recommends EagleEye Roofing and Building .
+Seodrnstpo
+ 
+12f0
+i
+8t8mfita88
+,
+57
+5
+04
+2
+r
+t
+ 
+92ug438
+p
+i
+l
+12
+0
+1
+A
+i
+2
+f3
+9
+2li9
+ 路
+When we had some bad weather, I had some bad leaks come through my roof. These gents came to my rescue as soon as I called. They inspected the full roof, found a few issues which I wasn't aware of. Took pictures to show me, and fixed all the problems for me straight away! I was expecting a tidy sized bill for the work, but I was surprised with how little they charged me for the work the boys did. I honestly can't recommend these guys enough. Builders who turn up on time and do what the say they are gonna do, yet charged me less than I was expecting! I have already recommend them to a few other friends 馃憤馃徎馃敤 See less
+
+Rhys Barnes  recommends EagleEye Roofing and Building .
+sSooetpndr5
+A
+fg15
+p
+m43
+0
+5tf4mta
+i
+l06
+2
+l
+2
+9
+49
+,
+g
+l
+304
+5
+0
+ 
+t72tg46g
+r
+mm0
+ 
+ 路
+Highly recommend this company had a leak on my roof called Leon to come and have a look,turned up the day and time he said no messing me about, give a really good price and returned within a few days to complete the job to a high standard deffo will 100% use again,have also recommended to family and friends already,thanks again mate
+
+Beth Davies  recommends EagleEye Roofing and Building .
+sSooetpndr5
+A
+fg15
+p
+m43
+0
+5tf4mta
+i
+l06
+2
+l
+2
+9
+49
+,
+g
+l
+304
+5
+0
+ 
+t72tg46g
+r
+mm0
+ 
+ 路
+Highly recommend these guys, I have just moved to a new property and needed a bit of work. Leejay was prompt, efficient and did and amazing job. A great job from a great company. Thanks guys.x
+
+
+Gavin Kelliher  recommends EagleEye Roofing and Building .
+sSooetpndr5
+A
+fg15
+p
+m43
+0
+5tf4mta
+i
+l06
+2
+l
+2
+9
+49
+,
+g
+l
+304
+5
+0
+ 
+t72tg46g
+r
+mm0
+ 
+ 路
+Had the old ridge tiles replaced with a new dry ridge system and a few broken slates sorted too. Really happy with the work鈥攄one quickly, looks great, and everything was left clean and tidy. Would definitely recommend!
