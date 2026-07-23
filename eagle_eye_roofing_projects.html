@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags Specific to Projects Page -->
+    <meta name="description" content="View our portfolio of completed roofing projects across Swansea and South Wales. From full re-roofs to flat roofs, see the high quality of our craftsmanship.">
+    <meta name="keywords" content="roofing portfolio, roofing projects Swansea, past roofing work, roof replacement before and after, Eagle Eye Roofing work">
+    <meta name="author" content="Eagle Eye Roofing & Building">
+    
+    <title>Our Projects & Portfolio | Eagle Eye Roofing & Building</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
+    <link rel="apple-touch-icon" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      "name": "Eagle Eye Roofing Projects Portfolio",
+      "description": "Gallery of completed roofing installations and repairs in South Wales."
+    }
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #000000; color: white; overflow-x: hidden; }
+        .brand-font { font-family: 'Cinzel', serif; }
+        
+        .gold-gradient { background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .gold-bg { background: linear-gradient(to right, #BF953F, #B38728, #AA771C); }
+        
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .logo-blend { mix-blend-mode: screen; }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen bg-black">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-40 bg-black/95 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center cursor-pointer group">
+                    <div class="relative">
+                        <div class="absolute inset-0 rounded-full border border-yellow-600/50 shadow-[0_0_15px_rgba(212,175,55,0.2)] group-hover:shadow-[0_0_25px_rgba(212,175,55,0.5)] transition-all"></div>
+                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Logo" class="h-12 w-12 sm:h-14 sm:w-14 object-cover rounded-full relative z-10 logo-blend">
+                    </div>
+                    <div class="ml-3 flex flex-col justify-center">
+                        <span class="text-sm sm:text-lg font-bold tracking-widest uppercase brand-font text-yellow-500 leading-tight">Eagle Eye</span>
+                        <span class="text-[0.55rem] sm:text-[0.65rem] font-semibold tracking-[0.15em] uppercase text-zinc-300 mt-0.5 whitespace-nowrap">Roofing & Building</span>
+                    </div>
+                </a>
+                
+                <div class="hidden md:flex space-x-5 lg:space-x-7 items-center">
+                    <a href="index.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Home</a>
+                    <a href="services.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Services</a>
+                    <!-- Projects is highlighted yellow -->
+                    <a href="projects.html" class="text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Projects</a>
+                    <a href="reviews.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Reviews</a>
+                    <a href="locations.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Locations</a>
+                    <a href="faq.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">FAQ</a>
+                    <a href="contact.html" class="gold-bg text-black px-4 lg:px-6 py-2 rounded-full text-xs lg:text-sm font-bold uppercase hover:opacity-90 transition-opacity transform hover:scale-105">Get a Quote</a>
+                </div>
+                
+                <button onclick="toggleMobileMenu()" class="md:hidden text-zinc-400 text-2xl hover:text-yellow-500 transition-colors"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-white/10 px-4 py-4 space-y-4">
+            <a href="index.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Home</a>
+            <a href="services.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Services</a>
+            <a href="projects.html" class="block w-full text-left text-yellow-500 uppercase tracking-wider font-medium">Projects</a>
+            <a href="reviews.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Reviews</a>
+            <a href="locations.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Locations</a>
+            <a href="faq.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">FAQ</a>
+            <a href="contact.html" class="block w-full text-center gold-bg text-black font-bold uppercase py-3 rounded tracking-wider">Get a Quote</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col relative">
+        <!-- Page Header -->
+        <div class="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden border-b border-white/10">
+            <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.1.JPG');"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+            <div class="relative z-10 text-center px-4 max-w-4xl mt-10">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 brand-font text-white drop-shadow-lg leading-tight uppercase">Our <span class="gold-gradient">Projects</span></h1>
+                <p class="text-zinc-300 font-light md:text-xl max-w-2xl mx-auto">A showcase of our premium craftsmanship across South Wales.</p>
+            </div>
+        </div>
+
+        <!-- Project Gallery Section -->
+        <section class="py-20 px-4">
+            <div class="max-w-7xl mx-auto">
+                <div class="text-center mb-16">
+                    <p class="text-yellow-500 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Portfolio</p>
+                    <h2 class="text-3xl md:text-4xl brand-font font-bold text-white">RECENT WORK</h2>
+                    <div class="w-24 h-1 gold-bg mx-auto mt-6 rounded-full opacity-50"></div>
+                </div>
+
+                <div id="gallery-projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
+                        <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.1.JPG')">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.1.JPG" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fas fa-expand text-white text-3xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.2.JPG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.2.JPG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.3.JPG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.3.JPG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.4.JPG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.4.JPG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.5.JPG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.5.JPG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.6.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.6.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.7.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.7.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.8.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.8.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.9.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.9.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.10.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.10.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.11.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project1.11.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
+                        <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project2.jpg')">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project2.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fas fa-expand text-white text-3xl"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
+                        <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project3.1.jpg')">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project3.1.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fas fa-expand text-white text-3xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project3.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project3.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
+                        <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.1.jpg')">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.1.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fas fa-expand text-white text-3xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.2.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.2.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
+                        <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project5.1.JPG')">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project5.1.JPG" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fas fa-expand text-white text-3xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project5.JPG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project5.JPG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
+                        <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project6.jpg')">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project6.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fas fa-expand text-white text-3xl"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
+                        <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.1.jpg')">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.1.jpg" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fas fa-expand text-white text-3xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.2.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.2.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.3.JPG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.3.JPG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.4.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.4.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.5.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.5.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.6.jpg" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.6.jpg')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.8.PNG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project7.8.PNG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
+                        <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.1.png')">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.1.png" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fas fa-expand text-white text-3xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.2.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.2.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.3.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.3.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.4.PNG" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.4.PNG')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.5.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.5.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.6.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.6.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.8.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.8.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.9.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.9.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                        </div>
+                    </div>
+
+                    <div class="bg-zinc-900 rounded-xl overflow-hidden border border-white/10 p-4 hover:border-yellow-600/50 transition-colors">
+                        <div class="relative group overflow-hidden rounded cursor-pointer mb-4" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project9.png')">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project9.png" class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                <i class="fas fa-expand text-white text-3xl"></i>
+                            </div>
+                        </div>
+                        <div class="flex gap-2 overflow-x-auto no-scrollbar pb-2">
+                            <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project9.1.png" onclick="openLightbox('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project9.1.png')" class="h-16 w-16 shrink-0 object-cover rounded cursor-pointer hover:opacity-75">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center pb-10">
+                <p class="text-zinc-400 mb-6 text-lg">Impressed by our work? Let's discuss your roofing project.</p>
+                <a href="contact.html" class="inline-block gold-bg text-black px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                    Get a Free Quote
+                </a>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal (Added here for Popups) -->
+        <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/95 hidden items-center justify-center px-4 opacity-0 transition-opacity duration-300" onclick="closeLightbox()">
+            <button class="absolute top-6 right-6 text-white/50 hover:text-white text-5xl transition-colors z-50">&times;</button>
+            <img id="lightbox-img" src="" class="max-h-[90vh] max-w-full object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300 hidden">
+            <video id="lightbox-vid" src="" class="max-h-[90vh] max-w-full rounded-lg shadow-2xl scale-95 transition-transform duration-300 hidden" controls playsinline></video>
+        </div>
+    </main>
+
+    <footer class="bg-zinc-950 py-12 border-t border-white/5 text-center flex flex-col items-center">
+        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Logo" class="h-16 w-16 object-cover rounded-full mb-4 logo-blend border border-yellow-600/30">
+        <p class="text-yellow-500 font-bold mb-2 tracking-widest uppercase text-sm">Eagle Eye Roofing & Building</p>
+        <p class="text-zinc-500 text-sm tracking-widest uppercase mb-1">Swansea & South Wales</p>
+        <p class="text-zinc-600 text-xs tracking-wider">Incorporated 12 March 2025</p>
+    </footer>
+
+    <!-- Floating Phone Button -->
+    <div id="floating-phone-btn" onclick="handlePhoneClick()" class="fixed bottom-6 right-6 z-40 bg-gradient-to-r from-yellow-600 to-yellow-400 text-black h-14 w-14 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.6)] cursor-pointer hover:scale-105 transition-all duration-300 overflow-hidden flex items-center group">
+        <div class="w-14 h-14 flex items-center justify-center shrink-0">
+            <i class="fas fa-phone text-xl"></i>
+        </div>
+        <span id="floating-phone-num" class="font-bold text-lg whitespace-nowrap opacity-0 w-0 transition-all duration-300">07753 865817</span>
+    </div>
+
+    <script>
+        function toggleMobileMenu() { 
+            document.getElementById('mobile-menu').classList.toggle('hidden'); 
+        }
+
+        let phoneExpanded = false;
+        function handlePhoneClick() {
+            const btn = document.getElementById('floating-phone-btn');
+            const num = document.getElementById('floating-phone-num');
+            
+            if (!phoneExpanded) {
+                btn.classList.remove('w-14');
+                btn.classList.add('w-48');
+                num.classList.remove('opacity-0', 'w-0');
+                num.classList.add('opacity-100', 'w-auto', 'pr-6');
+                phoneExpanded = true;
+                
+                setTimeout(() => {
+                    if(phoneExpanded) {
+                        btn.classList.add('w-14');
+                        btn.classList.remove('w-48');
+                        num.classList.add('opacity-0', 'w-0');
+                        num.classList.remove('opacity-100', 'w-auto', 'pr-6');
+                        phoneExpanded = false;
+                    }
+                }, 5000);
+            } else {
+                window.location.href = 'tel:07753865817';
+            }
+        }
+
+        // Lightbox Functions
+        function openLightbox(src, isVideo = false) {
+            const modal = document.getElementById('lightbox-modal');
+            const img = document.getElementById('lightbox-img');
+            const vid = document.getElementById('lightbox-vid');
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden'; 
+            
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                if(isVideo) {
+                    img.classList.add('hidden');
+                    vid.classList.remove('hidden');
+                    vid.src = src;
+                    vid.classList.remove('scale-95');
+                    vid.classList.add('scale-100');
+                    vid.play();
+                } else {
+                    vid.classList.add('hidden');
+                    vid.pause();
+                    img.classList.remove('hidden');
+                    img.src = src;
+                    img.classList.remove('scale-95');
+                    img.classList.add('scale-100');
+                }
+            }, 10);
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            const img = document.getElementById('lightbox-img');
+            const vid = document.getElementById('lightbox-vid');
+            
+            modal.classList.add('opacity-0');
+            img.classList.remove('scale-100');
+            img.classList.add('scale-95');
+            vid.classList.remove('scale-100');
+            vid.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+                document.body.style.overflow = 'auto'; 
+                vid.pause(); 
+                vid.src = ""; 
+            }, 300);
+        }
+    </script>
+</body>
+</html>

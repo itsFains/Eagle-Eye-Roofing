@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags Specific to FAQ Page -->
+    <meta name="description" content="Got a question about our roofing services? Find answers to frequently asked questions about quotes, guarantees, timelines, and our strict zero upfront payment policy.">
+    <meta name="keywords" content="roofing FAQ, roofing questions, roof quote Swansea, upfront payment roofer, Eagle Eye Roofing FAQ">
+    <meta name="author" content="Eagle Eye Roofing & Building">
+    
+    <title>Frequently Asked Questions | Eagle Eye Roofing & Building</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
+    <link rel="apple-touch-icon" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Do you require upfront payments or deposits?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely not. We operate a strict Zero Upfront Payment policy. You do not pay a single penny until the job is completely finished, the scaffolding is down, the site is clean, and you are 100% satisfied with the work."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Are your roofing quotes free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all our site surveys and quotes are completely free and carry absolutely no obligation."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What guarantees do you provide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We provide a comprehensive 25-year guarantee on materials for full re-roofs, alongside our own 10-year workmanship guarantee."
+        }
+      }]
+    }
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #000000; color: white; overflow-x: hidden; }
+        .brand-font { font-family: 'Cinzel', serif; }
+        
+        .gold-gradient { background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .gold-bg { background: linear-gradient(to right, #BF953F, #B38728, #AA771C); }
+        
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .logo-blend { mix-blend-mode: screen; }
+
+        .faq-answer { transition: all 0.3s ease-in-out; max-height: 0; overflow: hidden; opacity: 0; }
+        .faq-answer.open { max-height: 500px; opacity: 1; padding-top: 1rem; padding-bottom: 1rem; }
+        .faq-icon { transition: transform 0.3s ease; }
+        .faq-icon.open { transform: rotate(180deg); color: #EAB308; }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen bg-black">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-40 bg-black/95 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center cursor-pointer group">
+                    <div class="relative">
+                        <div class="absolute inset-0 rounded-full border border-yellow-600/50 shadow-[0_0_15px_rgba(212,175,55,0.2)] group-hover:shadow-[0_0_25px_rgba(212,175,55,0.5)] transition-all"></div>
+                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Logo" class="h-12 w-12 sm:h-14 sm:w-14 object-cover rounded-full relative z-10 logo-blend">
+                    </div>
+                    <div class="ml-3 flex flex-col justify-center">
+                        <span class="text-sm sm:text-lg font-bold tracking-widest uppercase brand-font text-yellow-500 leading-tight">Eagle Eye</span>
+                        <span class="text-[0.55rem] sm:text-[0.65rem] font-semibold tracking-[0.15em] uppercase text-zinc-300 mt-0.5 whitespace-nowrap">Roofing & Building</span>
+                    </div>
+                </a>
+                
+                <div class="hidden md:flex space-x-5 lg:space-x-7 items-center">
+                    <a href="index.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Home</a>
+                    <a href="services.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Services</a>
+                    <a href="projects.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Projects</a>
+                    <a href="reviews.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Reviews</a>
+                    <a href="locations.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Locations</a>
+                    <!-- FAQ is highlighted yellow -->
+                    <a href="faq.html" class="text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">FAQ</a>
+                    <a href="contact.html" class="gold-bg text-black px-4 lg:px-6 py-2 rounded-full text-xs lg:text-sm font-bold uppercase hover:opacity-90 transition-opacity transform hover:scale-105">Get a Quote</a>
+                </div>
+                
+                <button onclick="toggleMobileMenu()" class="md:hidden text-zinc-400 text-2xl hover:text-yellow-500 transition-colors"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-white/10 px-4 py-4 space-y-4">
+            <a href="index.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Home</a>
+            <a href="services.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Services</a>
+            <a href="projects.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Projects</a>
+            <a href="reviews.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Reviews</a>
+            <a href="locations.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Locations</a>
+            <a href="faq.html" class="block w-full text-left text-yellow-500 uppercase tracking-wider font-medium">FAQ</a>
+            <a href="contact.html" class="block w-full text-center gold-bg text-black font-bold uppercase py-3 rounded tracking-wider">Get a Quote</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col relative">
+        <!-- Page Header -->
+        <div class="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden border-b border-white/10">
+            <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project8.3.png');"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+            <div class="relative z-10 text-center px-4 max-w-4xl mt-10">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 brand-font text-white drop-shadow-lg leading-tight uppercase">Common <span class="gold-gradient">Questions</span></h1>
+                <p class="text-zinc-300 font-light md:text-xl max-w-2xl mx-auto">Everything you need to know about our processes, pricing, and guarantees.</p>
+            </div>
+        </div>
+
+        <section class="py-20 px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-16 bg-zinc-950 border border-yellow-600/50 rounded-3xl p-8 md:p-10 shadow-[0_0_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 text-yellow-600/10 text-9xl">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="relative z-10">
+                        <div class="inline-flex items-center space-x-2 bg-yellow-600/20 border border-yellow-600/50 px-4 py-2 rounded-full mb-6">
+                            <i class="fas fa-check-circle text-yellow-500"></i>
+                            <span class="text-yellow-500 text-xs font-bold uppercase tracking-widest">Our Promise</span>
+                        </div>
+                        <h2 class="text-3xl brand-font font-bold text-white mb-4">Zero Upfront Payments. Ever.</h2>
+                        <p class="text-zinc-300 text-lg leading-relaxed font-light">
+                            We know there are rogue traders out there who ask for cash for materials before they even start. <strong>We will never ask you for a deposit or upfront payment.</strong> You do not pay a single penny until the job is completely finished, the site is swept clean, and you are 100% satisfied with our craftsmanship.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    
+                    <!-- FAQ Item 1 -->
+                    <div class="bg-zinc-950 border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-600/30 transition-colors">
+                        <button onclick="toggleFaq('faq1')" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+                            <span class="text-lg font-semibold text-white pr-4">Are your roofing quotes really free?</span>
+                            <i id="icon-faq1" class="fas fa-chevron-down text-zinc-500 faq-icon"></i>
+                        </button>
+                        <div id="faq1" class="faq-answer px-6 bg-black/50">
+                            <p class="text-zinc-400 font-light leading-relaxed">Yes. All of our site visits, roof inspections, and written quotations are provided completely free of charge and carry zero obligation. We will assess the work needed and give you a transparent, fair price.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="bg-zinc-950 border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-600/30 transition-colors">
+                        <button onclick="toggleFaq('faq2')" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+                            <span class="text-lg font-semibold text-white pr-4">What guarantees do you offer on a new roof?</span>
+                            <i id="icon-faq2" class="fas fa-chevron-down text-zinc-500 faq-icon"></i>
+                        </button>
+                        <div id="faq2" class="faq-answer px-6 bg-black/50">
+                            <p class="text-zinc-400 font-light leading-relaxed">We provide massive peace of mind. For full re-roofs, we provide a 25-year guarantee on the materials used, alongside our own robust 10-year workmanship guarantee on the installation.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="bg-zinc-950 border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-600/30 transition-colors">
+                        <button onclick="toggleFaq('faq3')" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+                            <span class="text-lg font-semibold text-white pr-4">Do you respond to emergency storm damage?</span>
+                            <i id="icon-faq3" class="fas fa-chevron-down text-zinc-500 faq-icon"></i>
+                        </button>
+                        <div id="faq3" class="faq-answer px-6 bg-black/50">
+                            <p class="text-zinc-400 font-light leading-relaxed">Absolutely. We know the Welsh weather can be brutal. If you have lost tiles, have a major leak, or structural damage due to a storm, contact us immediately. We aim to secure the property rapidly to prevent internal water damage.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="bg-zinc-950 border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-600/30 transition-colors">
+                        <button onclick="toggleFaq('faq4')" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+                            <span class="text-lg font-semibold text-white pr-4">How long does a full roof replacement take?</span>
+                            <i id="icon-faq4" class="fas fa-chevron-down text-zinc-500 faq-icon"></i>
+                        </button>
+                        <div id="faq4" class="faq-answer px-6 bg-black/50">
+                            <p class="text-zinc-400 font-light leading-relaxed">While every property is unique, a standard 3-bedroom semi-detached full re-roof typically takes our team between 3 to 5 days from scaffolding going up to final site clearance, assuming the weather is cooperative.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="bg-zinc-950 border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-600/30 transition-colors">
+                        <button onclick="toggleFaq('faq5')" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+                            <span class="text-lg font-semibold text-white pr-4">Are you fully qualified and insured?</span>
+                            <i id="icon-faq5" class="fas fa-chevron-down text-zinc-500 faq-icon"></i>
+                        </button>
+                        <div id="faq5" class="faq-answer px-6 bg-black/50">
+                            <p class="text-zinc-400 font-light leading-relaxed">Yes. We hold comprehensive public liability insurance. Our team are highly skilled, holding City & Guilds qualifications, NVQ Level 2 in Roofing, and strict Health & Safety and CSCS certifications.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="bg-zinc-950 border border-white/10 rounded-2xl overflow-hidden hover:border-yellow-600/30 transition-colors">
+                        <button onclick="toggleFaq('faq6')" class="w-full px-6 py-5 flex items-center justify-between text-left focus:outline-none">
+                            <span class="text-lg font-semibold text-white pr-4">Do you take away the rubbish and old roof materials?</span>
+                            <i id="icon-faq6" class="fas fa-chevron-down text-zinc-500 faq-icon"></i>
+                        </button>
+                        <div id="faq6" class="faq-answer px-6 bg-black/50">
+                            <p class="text-zinc-400 font-light leading-relaxed">Yes, waste removal is fully included in our quotes unless explicitly stated otherwise. We respect your property and always ensure your driveways and gardens are swept and cleared of all debris before we sign off the job.</p>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="mt-20 text-center pb-10">
+                    <p class="text-zinc-400 mb-6 text-lg">Still have a question we haven't answered?</p>
+                    <a href="contact.html" class="inline-block gold-bg text-black px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                        Message Us Directly
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-zinc-950 py-12 border-t border-white/5 text-center flex flex-col items-center">
+        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Logo" class="h-16 w-16 object-cover rounded-full mb-4 logo-blend border border-yellow-600/30">
+        <p class="text-yellow-500 font-bold mb-2 tracking-widest uppercase text-sm">Eagle Eye Roofing & Building</p>
+        <p class="text-zinc-500 text-sm tracking-widest uppercase mb-1">Swansea & South Wales</p>
+        <p class="text-zinc-600 text-xs tracking-wider">Incorporated 12 March 2025</p>
+    </footer>
+
+    <!-- Floating Phone Button -->
+    <div id="floating-phone-btn" onclick="handlePhoneClick()" class="fixed bottom-6 right-6 z-40 bg-gradient-to-r from-yellow-600 to-yellow-400 text-black h-14 w-14 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.6)] cursor-pointer hover:scale-105 transition-all duration-300 overflow-hidden flex items-center group">
+        <div class="w-14 h-14 flex items-center justify-center shrink-0">
+            <i class="fas fa-phone text-xl"></i>
+        </div>
+        <span id="floating-phone-num" class="font-bold text-lg whitespace-nowrap opacity-0 w-0 transition-all duration-300">07753 865817</span>
+    </div>
+
+    <script>
+        function toggleMobileMenu() { 
+            document.getElementById('mobile-menu').classList.toggle('hidden'); 
+        }
+
+        let phoneExpanded = false;
+        function handlePhoneClick() {
+            const btn = document.getElementById('floating-phone-btn');
+            const num = document.getElementById('floating-phone-num');
+            
+            if (!phoneExpanded) {
+                btn.classList.remove('w-14');
+                btn.classList.add('w-48');
+                num.classList.remove('opacity-0', 'w-0');
+                num.classList.add('opacity-100', 'w-auto', 'pr-6');
+                phoneExpanded = true;
+                
+                setTimeout(() => {
+                    if(phoneExpanded) {
+                        btn.classList.add('w-14');
+                        btn.classList.remove('w-48');
+                        num.classList.add('opacity-0', 'w-0');
+                        num.classList.remove('opacity-100', 'w-auto', 'pr-6');
+                        phoneExpanded = false;
+                    }
+                }, 5000);
+            } else {
+                window.location.href = 'tel:07753865817';
+            }
+        }
+
+        function toggleFaq(id) {
+            const answer = document.getElementById(id);
+            const icon = document.getElementById('icon-' + id);
+            
+            if (answer.classList.contains('open')) {
+                answer.classList.remove('open');
+                icon.classList.remove('open');
+            } else {
+                // Optional: Close all other open FAQs first
+                document.querySelectorAll('.faq-answer.open').forEach(el => el.classList.remove('open'));
+                document.querySelectorAll('.faq-icon.open').forEach(el => el.classList.remove('open'));
+                
+                // Open the clicked one
+                answer.classList.add('open');
+                icon.classList.add('open');
+            }
+        }
+    </script>
+</body>
+</html>
