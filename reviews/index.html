@@ -1,1 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags Specific to Reviews Page -->
+    <meta name="description" content="Read genuine reviews and testimonials from our satisfied roofing customers across Swansea and South Wales. 5-star rated on Google and Facebook.">
+    <meta name="keywords" content="Eagle Eye Roofing reviews, roofer testimonials Swansea, recommended roofers South Wales, 5 star roofing company, trusted builders">
+    <meta name="author" content="Eagle Eye Roofing & Building">
+    
+    <title>Client Reviews & Testimonials | Eagle Eye Roofing & Building</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
+    <link rel="apple-touch-icon" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
+    
+    <!-- Sitemap Link for Google -->
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Eagle Eye Roofing & Building",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "61"
+      }
+    }
+    </script>
+
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #000000; color: white; overflow-x: hidden; }
+        .brand-font { font-family: 'Cinzel', serif; }
+        
+        .gold-gradient { background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .gold-bg { background: linear-gradient(to right, #BF953F, #B38728, #AA771C); }
+        
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        .logo-blend { mix-blend-mode: screen; }
+        
+        .review-card { transition: all 0.3s ease; }
+        .review-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(212,175,55,0.15); border-color: rgba(212,175,55,0.4); }
+    </style>
+</head>
+<body class="antialiased flex flex-col min-h-screen bg-black">
+
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-40 bg-black/95 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center cursor-pointer group">
+                    <div class="relative">
+                        <div class="absolute inset-0 rounded-full border border-yellow-600/50 shadow-[0_0_15px_rgba(212,175,55,0.2)] group-hover:shadow-[0_0_25px_rgba(212,175,55,0.5)] transition-all"></div>
+                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Logo" class="h-12 w-12 sm:h-14 sm:w-14 object-cover rounded-full relative z-10 logo-blend">
+                    </div>
+                    <div class="ml-3 flex flex-col justify-center">
+                        <span class="text-sm sm:text-lg font-bold tracking-widest uppercase brand-font text-yellow-500 leading-tight">Eagle Eye</span>
+                        <span class="text-[0.55rem] sm:text-[0.65rem] font-semibold tracking-[0.15em] uppercase text-zinc-300 mt-0.5 whitespace-nowrap">Roofing & Building</span>
+                    </div>
+                </a>
+                
+                <div class="hidden md:flex space-x-5 lg:space-x-7 items-center">
+                    <a href="index.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Home</a>
+                    <a href="services.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Services</a>
+                    <a href="projects.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Projects</a>
+                    <!-- Reviews is highlighted yellow -->
+                    <a href="reviews.html" class="text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Reviews</a>
+                    <a href="locations.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Locations</a>
+                    <a href="faq.html" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">FAQ</a>
+                    <a href="contact.html" class="gold-bg text-black px-4 lg:px-6 py-2 rounded-full text-xs lg:text-sm font-bold uppercase hover:opacity-90 transition-opacity transform hover:scale-105">Get a Quote</a>
+                </div>
+                
+                <button onclick="toggleMobileMenu()" class="md:hidden text-zinc-400 text-2xl hover:text-yellow-500 transition-colors"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-white/10 px-4 py-4 space-y-4">
+            <a href="index.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Home</a>
+            <a href="services.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Services</a>
+            <a href="projects.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Projects</a>
+            <a href="reviews.html" class="block w-full text-left text-yellow-500 uppercase tracking-wider font-medium">Reviews</a>
+            <a href="locations.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Locations</a>
+            <a href="faq.html" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">FAQ</a>
+            <a href="contact.html" class="block w-full text-center gold-bg text-black font-bold uppercase py-3 rounded tracking-wider">Get a Quote</a>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex flex-col relative">
+        <!-- Page Header -->
+        <div class="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden border-b border-white/10">
+            <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project2.jpg');"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
+            <div class="relative z-10 text-center px-4 max-w-4xl mt-10">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 brand-font text-white drop-shadow-lg leading-tight uppercase">Client <span class="gold-gradient">Reviews</span></h1>
+                <p class="text-zinc-300 font-light md:text-xl max-w-2xl mx-auto">Don't just take our word for it. See what our customers have to say about our craftsmanship.</p>
+            </div>
+        </div>
+
+        <section class="py-24 px-4 text-center min-h-[70vh]">
+            <div class="max-w-7xl mx-auto">
+                
+                <!-- Google Reviews Section -->
+                <div id="google-reviews-header">
+                    <div class="flex justify-center mb-6">
+                        <span class="text-4xl md:text-5xl font-bold font-sans flex items-center gap-3">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(255,255,255,0.2)]">
+                                <i class="fab fa-google text-[#4285F4] text-2xl"></i>
+                            </div>
+                            <span class="text-[#4285F4]">G</span><span class="text-[#EA4335]">o</span><span class="text-[#FBBC05]">o</span><span class="text-[#4285F4]">g</span><span class="text-[#34A853]">l</span><span class="text-[#EA4335]">e</span>
+                        </span>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-12 text-white">Verified Customer Ratings</h2>
+                    
+                    <!-- Google Reviews Grid (Top 6 Initial Load) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-8 text-left">
+                        
+                        <!-- Google Review 1 -->
+                        <div class="bg-zinc-900 border border-white/10 hover:border-[#4285F4]/50 transition-colors p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Excellent service from start to end. Leejay and his team were polite, professional and were upfront and honest about extra costs that were unexpected due to unforeseen issues. Would highly recommend."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">JH</div>
+                                <div>
+                                    <p class="text-white font-bold text-sm">James Hopkins</p>
+                                    <p class="text-zinc-500 text-xs">Google Review</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Review 2 -->
+                        <div class="bg-zinc-900 border border-white/10 hover:border-[#4285F4]/50 transition-colors p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"I couldn’t be happier with the new roof completed by Leejay and the team. From the initial quote to the finished job, everything was handled professionally and to an exceptionally high standard. The attention to detail was outstanding."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">MO</div>
+                                <div>
+                                    <p class="text-white font-bold text-sm">Matthew Osmond</p>
+                                    <p class="text-zinc-500 text-xs">Google Review</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Review 3 -->
+                        <div class="bg-zinc-900 border border-white/10 hover:border-[#4285F4]/50 transition-colors p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Excellent service. The boys were efficient and did a brilliant job. Had an old flat roof that was leaking down the walls and ruined the garage every winter. Eagle Eye roofing laid a completely new flat roof and took no time at all. A good price, clean work."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">DJ</div>
+                                <div>
+                                    <p class="text-white font-bold text-sm">Dan Jones</p>
+                                    <p class="text-zinc-500 text-xs">Google Review</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Review 4 -->
+                        <div class="bg-zinc-900 border border-white/10 hover:border-[#4285F4]/50 transition-colors p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"After months of being messed around by other roofing companies, I posted on a local Facebook noticeboard looking for recommendations — and this company came highly recommended. Excellent service from start to finish!"</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">WR</div>
+                                <div>
+                                    <p class="text-white font-bold text-sm">Winston Roderick</p>
+                                    <p class="text-zinc-500 text-xs">Google Review</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Review 5 -->
+                        <div class="bg-zinc-900 border border-white/10 hover:border-[#4285F4]/50 transition-colors p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Great experience with this company, needed short notice work done to my roof to prevent further damage and they went above and beyond what I needed for the price I paid, would definitely recommend."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AF</div>
+                                <div>
+                                    <p class="text-white font-bold text-sm">Alex Fender</p>
+                                    <p class="text-zinc-500 text-xs">Google Review</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Review 6 -->
+                        <div class="bg-zinc-900 border border-white/10 hover:border-[#4285F4]/50 transition-colors p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"I highly recommend eagle eye roofing. quick reply for quote. competitive price and able to do job promptly. the team are friendly and crack on with the job. very pleased with the work done and cleaned up once finished."</p>
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">WB</div>
+                                <div>
+                                    <p class="text-white font-bold text-sm">Wayne Brown</p>
+                                    <p class="text-zinc-500 text-xs">Google Review</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Expandable Google Reviews Section -->
+                    <div id="more-google-reviews" class="hidden">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-8 text-left">
+                            
+                            <!-- Google Review 7 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"I rarely write these reviews but just had for these guys, absolute stars very efficient and top quality work you can tell they take pride the the work they do."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">MJ</div><div><p class="text-white font-bold text-sm">Martyn Jones</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+
+                            <!-- Google Review 8 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Can't recommend them enough!! Leejay and the team were excellent, very professional and brilliant at their job!"</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">MS</div><div><p class="text-white font-bold text-sm">Mark Stevens</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+
+                            <!-- Google Review 9 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Guys came round to clean my gutters and fascias on one of their small jobs for free days. Great job thank you."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">TD</div><div><p class="text-white font-bold text-sm">Tina Duwell</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+
+                            <!-- Google Review 10 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"First I had a small repair to roof. I was so impressed by the efficient way they carried out the repair, and the same time was informed the roof was deteriorating... I decided to go ahead with the work. Excellent standard."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">TP</div><div><p class="text-white font-bold text-sm">Tim Parlour</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+
+                            <!-- Google Review 11 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"I asked these lads if they would give come and give me a quote to stop house sparrows from getting under my tiles and nesting, they turned up... they did the job took about 40 mins and said free no charge! Highly recommend."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">JG</div><div><p class="text-white font-bold text-sm">John Gibbs</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+
+                            <!-- Google Review 12 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"I saw these guys working on my estate and asked if they could price a job for me, they turned up after completing their job and told me they would do it for free... fantastic job great lads."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">JG</div><div><p class="text-white font-bold text-sm">Julie Gibbs</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+
+                            <!-- Google Review 13 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Quick response from the team. Brilliant, quick, friendly and professional. Would highly recommend. Thank you for speedy response"</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">RT</div><div><p class="text-white font-bold text-sm">Rebekah Thomas</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+
+                            <!-- Google Review 14 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Came and fixed some slipped tiles on my roof, we’re only half an hour and did a good job, friendly helpful lads and wouldn’t take payment, highly recommend 😊"</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">JH</div><div><p class="text-white font-bold text-sm">Julie Hope</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+
+                            <!-- Google Review 15 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Excellent roofing job today good lads can definitely recommend."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AH</div><div><p class="text-white font-bold text-sm">Ann Howells</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+
+                            <!-- Google Review 16 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Messaged the face book page, replied straight away. Give me a date and time shown up when he said he would fixed my tile roof, noticed a few more damaged and repaired them also. Great guy great company."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">SH</div><div><p class="text-white font-bold text-sm">Shaun Howells</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+
+                            <!-- Google Review 17 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"What a great company well done great job I can highly recommend thanks"</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">JH</div><div><p class="text-white font-bold text-sm">J Howells</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+
+                            <!-- Google Review 18 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Great price · £500–1,000"</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">GK</div><div><p class="text-white font-bold text-sm">Gavin Kelliher</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+                            
+                            <!-- (Original Older Google Reviews Transferred Down) -->
+                            <!-- Google Review 19 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Great price. Top class service...."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">WM</div><div><p class="text-white font-bold text-sm">Wayne Miller</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+                            
+                            <!-- Google Review 20 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Great price · £500–1,000. Very professional and cheap."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">GT</div><div><p class="text-white font-bold text-sm">George Tache</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+                            
+                            <!-- Google Review 21 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Following the red storm we lost our roof! It was a very traumatic time. I contacted Eagle Eye Roofing who not only reassured me they would sort it, they would do it as quick as possible..."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">LJ</div><div><p class="text-white font-bold text-sm">Lloyd James</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+                            
+                            <!-- Google Review 22 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Fantastic service from start to finish! The team was friendly, professional, and did an excellent job on the roof. Great attention to detail, completed everything on time, and left the area clean and tidy. Highly recommend..."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">KJ</div><div><p class="text-white font-bold text-sm">Kyle Jenkins</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+                            
+                            <!-- Google Review 23 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Eagle eye roofing were fantastic, Leejay and the team were very efficient and job was completed professionally."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AG</div><div><p class="text-white font-bold text-sm">Ashley Griffiths</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+                            
+                            <!-- Google Review 24 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Leon and Leejay were quick to come out and assess the work needed to help stop birds nesting under my roof tiles..."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">JS</div><div><p class="text-white font-bold text-sm">Jonathan Smithers</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+                            
+                            <!-- Google Review 25 -->
+                            <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                                <div class="absolute top-6 right-6 text-zinc-500 text-2xl"><i class="fab fa-google"></i></div>
+                                <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Quick response and great work carried out replacing a flat roof, old fibre glass and boards removed and replaced with new boards and rubber roofing and trims. Would recommend for any roofing work."</p>
+                                <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">MR</div><div><p class="text-white font-bold text-sm">Matt Rossi</p><p class="text-zinc-500 text-xs">Google Review</p></div></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <!-- Show More Google Reviews Button -->
+                    <div class="mt-8 mb-12">
+                        <button id="show-more-google-btn" onclick="toggleGoogleReviews()" class="px-8 py-4 border border-zinc-500 text-zinc-300 rounded-full font-bold hover:bg-zinc-800 hover:text-white transition-colors shadow-lg">
+                            Load All 25 Google Reviews
+                        </button>
+                    </div>
+                </div>
+
+                <div class="w-full h-px bg-white/10 my-16"></div>
+
+                <!-- Facebook Logo Header -->
+                <div id="facebook-reviews-header">
+                    <div class="flex justify-center mb-6">
+                        <span class="text-4xl md:text-5xl font-bold font-sans flex items-center gap-3">
+                            <div class="w-12 h-12 bg-[#1877F2] rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(24,119,242,0.4)]">
+                                <i class="fab fa-facebook-f text-white text-2xl"></i>
+                            </div>
+                            <span class="text-[#1877F2]">facebook</span>
+                        </span>
+                    </div>
+                    <h2 class="text-2xl font-bold mb-12 text-white">Community Recommendations</h2>
+                </div>
+                
+                <!-- Facebook Reviews Grid (Top 6 Initial Load) -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-8 text-left">
+                    
+                    <!-- Facebook Review 1 -->
+                    <div class="bg-zinc-900 border border-white/10 hover:border-[#1877F2]/50 transition-colors p-8 rounded-2xl relative shadow-lg flex flex-col">
+                        <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="absolute top-6 right-6 text-[#1877F2] text-3xl hover:scale-110 transition-transform"><i class="fab fa-facebook"></i></a>
+                        <div class="flex text-yellow-500 text-sm mb-4 gap-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Lee and the whole team are brilliant! Came to the house to view the roof one day after me contacting him... Within 10 days, I had scaffolding up, old roof ripped off, new roof put on, attic insulated and new waterworks! 10/10 would recommend to anyone!"</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">LJ</div>
+                            <div>
+                                <p class="text-white font-bold text-sm">Luke John</p>
+                                <p class="text-zinc-500 text-xs">Facebook Recommendation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facebook Review 2 -->
+                    <div class="bg-zinc-900 border border-white/10 hover:border-[#1877F2]/50 transition-colors p-8 rounded-2xl relative shadow-lg flex flex-col">
+                        <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="absolute top-6 right-6 text-[#1877F2] text-3xl hover:scale-110 transition-transform"><i class="fab fa-facebook"></i></a>
+                        <div class="flex text-yellow-500 text-sm mb-4 gap-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"I recently had my roof replaced by Eagle Eye and I couldn't be happier with the results. From the initial inspection to the final cleanup, the boys were professional, punctual, and highly skilled. They provided a clear estimate... The new roof looks fantastic."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">DR</div>
+                            <div>
+                                <p class="text-white font-bold text-sm">Deb Rossi</p>
+                                <p class="text-zinc-500 text-xs">Facebook Recommendation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facebook Review 3 -->
+                    <div class="bg-zinc-900 border border-white/10 hover:border-[#1877F2]/50 transition-colors p-8 rounded-2xl relative shadow-lg flex flex-col">
+                        <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="absolute top-6 right-6 text-[#1877F2] text-3xl hover:scale-110 transition-transform"><i class="fab fa-facebook"></i></a>
+                        <div class="flex text-yellow-500 text-sm mb-4 gap-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"I cannot thank these enough. Had to have chimney removed and Leejay Gluyas was there sorting our roof straight away for us. Amazing company and really cannot thank you enough. I was so stressed and you sorted the roof so quickly."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">LP</div>
+                            <div>
+                                <p class="text-white font-bold text-sm">Lisa Phillips</p>
+                                <p class="text-zinc-500 text-xs">Facebook Recommendation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facebook Review 4 -->
+                    <div class="bg-zinc-900 border border-white/10 hover:border-[#1877F2]/50 transition-colors p-8 rounded-2xl relative shadow-lg flex flex-col">
+                        <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="absolute top-6 right-6 text-[#1877F2] text-3xl hover:scale-110 transition-transform"><i class="fab fa-facebook"></i></a>
+                        <div class="flex text-yellow-500 text-sm mb-4 gap-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Leejay and his gang absolutely smashed it for me at short notice. I wasn't expecting to need a new roof until I checked the inside. a high percentage of my batterns where rotten... Eagleye roofing came to the rescue and well happy with the velux windows."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">RT</div>
+                            <div>
+                                <p class="text-white font-bold text-sm">Richard Taylor</p>
+                                <p class="text-zinc-500 text-xs">Facebook Recommendation</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Facebook Review 5 -->
+                    <div class="bg-zinc-900 border border-white/10 hover:border-[#1877F2]/50 transition-colors p-8 rounded-2xl relative shadow-lg flex flex-col">
+                        <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="absolute top-6 right-6 text-[#1877F2] text-3xl hover:scale-110 transition-transform"><i class="fab fa-facebook"></i></a>
+                        <div class="flex text-yellow-500 text-sm mb-4 gap-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Leejay and the boys came and helped save a garage roof which was in dire need of replacement... The final product was excellent, new beams, all boarded. The boys were efficient, prepared and really put in the hard work."</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">DJ</div>
+                            <div>
+                                <p class="text-white font-bold text-sm">Dan Jones</p>
+                                <p class="text-zinc-500 text-xs">Facebook Recommendation</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facebook Review 6 -->
+                    <div class="bg-zinc-900 border border-white/10 hover:border-[#1877F2]/50 transition-colors p-8 rounded-2xl relative shadow-lg flex flex-col">
+                        <a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" class="absolute top-6 right-6 text-[#1877F2] text-3xl hover:scale-110 transition-transform"><i class="fab fa-facebook"></i></a>
+                        <div class="flex text-yellow-500 text-sm mb-4 gap-1">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Highly recommended! ⭐️⭐️⭐️⭐️⭐️ Contacted Eagle Eye Roofing and from quote to completing my flat roof replacement; the communication and quality of work was faultless. Thank you!"</p>
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">BM</div>
+                            <div>
+                                <p class="text-white font-bold text-sm">Beth Morris</p>
+                                <p class="text-zinc-500 text-xs">Facebook Recommendation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expandable Facebook Reviews Section -->
+                <div id="more-reviews" class="hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16 text-left">
+                        
+                        <!-- Review 7 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Just had my flat roof replaced. The guys were super friendly and worked so hard to get it done in a day. The roof looks fantastic. Would highly recommend them for great quality work and a great price."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">SA</div><div><p class="text-white font-bold text-sm">Suzanne Adams</p></div></div>
+                        </div>
+
+                        <!-- Review 8 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"When we had some bad weather, I had some bad leaks come through my roof. These gents came to my rescue as soon as I called... fixed all the problems for me straight away! I honestly can't recommend these guys enough."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">SF</div><div><p class="text-white font-bold text-sm">Sam Figgures</p></div></div>
+                        </div>
+
+                        <!-- Review 9 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Highly recommend this company had a leak on my roof called Leon to come and have a look,turned up the day and time he said no messing me about, give a really good price and returned within a few days..."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">RB</div><div><p class="text-white font-bold text-sm">Rhys Barnes</p></div></div>
+                        </div>
+
+                        <!-- Review 10 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Highly recommend these guys, I have just moved to a new property and needed a bit of work. Leejay was prompt, efficient and did and amazing job. A great job from a great company. Thanks guys."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">BD</div><div><p class="text-white font-bold text-sm">Beth Davies</p></div></div>
+                        </div>
+
+                        <!-- Review 11 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Had the old ridge tiles replaced with a new dry ridge system and a few broken slates sorted too. Really happy with the work—done quickly, looks great, and everything was left clean and tidy."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">GK</div><div><p class="text-white font-bold text-sm">Gavin Kelliher</p></div></div>
+                        </div>
+
+                        <!-- Review 12 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Genuine guys, did a good job and explained it all. Took photos to show before and after's, so no hidden surprises 👍"</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">NA</div><div><p class="text-white font-bold text-sm">Nast Assja</p></div></div>
+                        </div>
+
+                        <!-- Review 13 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Had wind damage to roof which needed sorting, the guys turned up sharpish and identified further issues... Always kept us in the loop with what was needed and the finish is even better than it was before."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">LT</div><div><p class="text-white font-bold text-sm">Liam Thomas</p></div></div>
+                        </div>
+
+                        <!-- Review 14 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Recently contacted eagle eye roofing to install a led flashing for me! Within 2 hours they had come to save the day, could not recommend this company enough!⭐️⭐️⭐️⭐️⭐️"</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">KJ</div><div><p class="text-white font-bold text-sm">Kyle Jenkins</p></div></div>
+                        </div>
+
+                        <!-- Review 15 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Excellent job on our roof and dormer cladding. Hard workers and fun to have around. Just get plenty of tea and sugar in"</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">PB</div><div><p class="text-white font-bold text-sm">Paul Buck</p></div></div>
+                        </div>
+
+                        <!-- Review 16 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Came to apply silicone to gaps between the porch roof and wall to prevent leaking! Came and completed the work free of charge... lovely gesture! Has given further advice on what will be required... thank you!"</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">HS</div><div><p class="text-white font-bold text-sm">Helena Smith</p></div></div>
+                        </div>
+
+                        <!-- Review 17 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Wouldn't hesitate to recommend Leejay, Leon and boys. Did a fantastic job on my roof, reliable and turned up in the most horrendous weather conditions."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">JD</div><div><p class="text-white font-bold text-sm">Janine Davies</p></div></div>
+                        </div>
+
+                        <!-- Review 18 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Fantastic service! They fixed a roof tile for me quickly and did an excellent job. Very professional and efficient. Would definitely use them again. If you are looking roof work to be done these are the boys to call."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AG</div><div><p class="text-white font-bold text-sm">Alex Gluyas</p></div></div>
+                        </div>
+                        
+                        <!-- Review 19 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Leejay and the team done a fantastic job on my guttering and I would recommend him and his company for all roofing and building works."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AG</div><div><p class="text-white font-bold text-sm">Ashley Craig Griffiths</p></div></div>
+                        </div>
+                        
+                        <!-- Review 20 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Highly recommend Leejay and EagleEye Roofing. Came out to do a repair on the roof on short notice and sorted the issue straight away"</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AH</div><div><p class="text-white font-bold text-sm">Aaran Holman</p></div></div>
+                        </div>
+                        
+                        <!-- Review 21 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Highly recommend leejay and the boys, rang yesterday to see if they could help and within a few hours leejay was up to have a look and by today lunchtime my roof was patched up and good as new..."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">KS</div><div><p class="text-white font-bold text-sm">Kieran Southard</p></div></div>
+                        </div>
+                        
+                        <!-- Review 22 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Leon and Leejay replaced our aging Velux and carried out some essential roof maintenance including replacing all ridge tiles... We are very happy with the workmanship and they even kindly did a couple of extra jobs."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">SW</div><div><p class="text-white font-bold text-sm">Stuart Williams</p></div></div>
+                        </div>
+
+                        <!-- Review 23 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"over the moon with these boy, Leon & Leejay. Thank you so much lads for fixing my roof, excellent work, no more leaks & the price was amazing. I would recommend eagle eye roofing to my friends & family."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">GS</div><div><p class="text-white font-bold text-sm">Gloria Sillman</p></div></div>
+                        </div>
+
+                        <!-- Review 24 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Lee was brilliant! We had leaks in a flat roof - it wasn't a huge job so I wasn't expecting such a quick response. Lee came out the same day called scoped the job, gave me a reasonable price and was back fixing the problems."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AS</div><div><p class="text-white font-bold text-sm">Alexandra Simmons</p></div></div>
+                        </div>
+
+                        <!-- Review 25 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Messaged on the Thursday, came out on the Friday... Leon and Leejay were thorough of their job from start to finish, my grandparents had nothing but good to say - very caring towards my 2 very ill grandparents."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">KH</div><div><p class="text-white font-bold text-sm">Kaitlin Hopkins</p></div></div>
+                        </div>
+
+                        <!-- Review 26 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"highly recommend. weather hasn't been good but they kept in constant contact to update me and was here when they said. very quick and professional. couldn't ask fot better."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">SJ</div><div><p class="text-white font-bold text-sm">Savannah Jeffreys</p></div></div>
+                        </div>
+
+                        <!-- Review 27 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Couldn’t recommend the boys at EagleEye Roofing and Building enough👏 Needed my chimney taken down and within a couple of days they were able to squeeze me in to get it complete. Top job done as always! Cheers boys👊"</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">ES</div><div><p class="text-white font-bold text-sm">Ethan Smith</p></div></div>
+                        </div>
+
+                        <!-- Review 28 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"5 Stars – Excellent Service. Called Eagle Eye Roofing and they came out straight away. Assessed the repair, knew exactly what needed doing, ordered the necessary parts, and returned promptly to fix it. Fast, efficient, and professional!"</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">CS</div><div><p class="text-white font-bold text-sm">Chris Sheehan</p></div></div>
+                        </div>
+
+                        <!-- Review 29 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"leejay and his team were very good, removed my chimney and fixed the leak I had coming through the roof. very affordable and completed the job well before time. couldn't recommend them enough."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AF</div><div><p class="text-white font-bold text-sm">Alex Fender</p></div></div>
+                        </div>
+
+                        <!-- Review 30 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Wow. We can't thank you boys enough for the outstanding work you've done on our latest project.. from the start the communication has been clear and consistent.. the professional advice given has probably saved us a small fortune."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">CE</div><div><p class="text-white font-bold text-sm">Claire Edwards</p></div></div>
+                        </div>
+
+                        <!-- Review 31 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"great bunch of lads repaired my roof within 24hrs of me calling them outstanding service and amazing price highly recommended"</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">ML</div><div><p class="text-white font-bold text-sm">Matthew Lannen</p></div></div>
+                        </div>
+                        
+                        <!-- Review 32 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"We’ve recently had EagleEye Roofing and Building come and cover a roof for us on a massive project and I have to say the team were outstanding from start to finish, we couldn’t recommend them enough! So much so that we’ve already booked them in on our next big project!"</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">LL</div><div><p class="text-white font-bold text-sm">Llcarpentry LTD</p></div></div>
+                        </div>
+
+                        <!-- Review 33 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Would like to thank EagleEye Roofing and Building Leon Gluyas Leejay Gluyas for coming and sorting the roof out... no messing around got the job done ☑️ Thank you boys Highly recommended!"</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">KA</div><div><p class="text-white font-bold text-sm">Kobi Ali</p></div></div>
+                        </div>
+                        
+                        <!-- Review 34 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"I couldn’t think of a better roofing company than EagleEye Roofing and Building. They were super efficient and friendly. I would have them back in a heartbeat."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">LJ</div><div><p class="text-white font-bold text-sm">Lloyd James</p></div></div>
+                        </div>
+
+                        <!-- Review 35 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"I can’t thank Eagle Eye Roofing and Building enough for the help they gave my 84-year-old Nan. She had a few tiles that had slipped from her roof, and they responded quickly, were incredibly reliable, and got the job done with no fuss."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">KM</div><div><p class="text-white font-bold text-sm">Kimberly Meredith</p></div></div>
+                        </div>
+
+                        <!-- Review 36 -->
+                        <div class="bg-zinc-900 border border-white/10 p-8 rounded-2xl relative shadow-lg flex flex-col">
+                            <div class="flex text-yellow-500 text-sm mb-4 gap-1"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="text-zinc-300 italic mb-6 leading-relaxed flex-grow">"Highly recommend! They did a job for us recently & we are so pleased with the work they’ve done. Professional throughout & great communication from day 1. Came out asap to give us a quote when we had a leak so they could assess the issue."</p>
+                            <div class="flex items-center gap-3"><div class="w-10 h-10 bg-zinc-800 rounded-full flex items-center justify-center text-zinc-500 font-bold">AF</div><div><p class="text-white font-bold text-sm">Alice Frances</p></div></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Show More Reviews Button -->
+                <div class="mt-8 mb-24">
+                    <button id="show-more-reviews-btn" onclick="toggleReviews()" class="px-8 py-4 border border-yellow-600/50 text-yellow-500 rounded-full font-bold hover:bg-yellow-600 hover:text-black transition-colors shadow-[0_0_15px_rgba(212,175,55,0.3)]">
+                        Load All 36 Facebook Reviews
+                    </button>
+                </div>
+            </div>
+            
+            <div class="mt-24 text-center pb-10">
+                <p class="text-zinc-400 mb-6 text-lg">Ready to experience our 5-star service for yourself?</p>
+                <a href="contact.html" class="inline-block gold-bg text-black px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                    Get a Free Quote
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-zinc-950 py-12 border-t border-white/5 text-center flex flex-col items-center">
+        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Logo" class="h-16 w-16 object-cover rounded-full mb-4 logo-blend border border-yellow-600/30">
+        <p class="text-yellow-500 font-bold mb-2 tracking-widest uppercase text-sm">Eagle Eye Roofing & Building</p>
+        <p class="text-zinc-500 text-sm tracking-widest uppercase mb-1">Swansea & South Wales</p>
+        <p class="text-zinc-600 text-xs tracking-wider">Incorporated 12 March 2025</p>
+    </footer>
+
+    <!-- Floating Phone Button -->
+    <div id="floating-phone-btn" onclick="handlePhoneClick()" class="fixed bottom-6 right-6 z-40 bg-gradient-to-r from-yellow-600 to-yellow-400 text-black h-14 w-14 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.6)] cursor-pointer hover:scale-105 transition-all duration-300 overflow-hidden flex items-center group">
+        <div class="w-14 h-14 flex items-center justify-center shrink-0">
+            <i class="fas fa-phone text-xl"></i>
+        </div>
+        <span id="floating-phone-num" class="font-bold text-lg whitespace-nowrap opacity-0 w-0 transition-all duration-300">07753 865817</span>
+    </div>
+
+    <script>
+        function toggleMobileMenu() { 
+            document.getElementById('mobile-menu').classList.toggle('hidden'); 
+        }
+
+        let phoneExpanded = false;
+        function handlePhoneClick() {
+            const btn = document.getElementById('floating-phone-btn');
+            const num = document.getElementById('floating-phone-num');
+            
+            if (!phoneExpanded) {
+                btn.classList.remove('w-14');
+                btn.classList.add('w-48');
+                num.classList.remove('opacity-0', 'w-0');
+                num.classList.add('opacity-100', 'w-auto', 'pr-6');
+                phoneExpanded = true;
+                
+                setTimeout(() => {
+                    if(phoneExpanded) {
+                        btn.classList.add('w-14');
+                        btn.classList.remove('w-48');
+                        num.classList.add('opacity-0', 'w-0');
+                        num.classList.remove('opacity-100', 'w-auto', 'pr-6');
+                        phoneExpanded = false;
+                    }
+                }, 5000);
+            } else {
+                window.location.href = 'tel:07753865817';
+            }
+        }
+
+        function toggleGoogleReviews() {
+            const hiddenDiv = document.getElementById('more-google-reviews');
+            const btn = document.getElementById('show-more-google-btn');
+            
+            if (hiddenDiv.classList.contains('hidden')) {
+                hiddenDiv.classList.remove('hidden');
+                setTimeout(() => hiddenDiv.classList.remove('opacity-0'), 50);
+                btn.innerText = "Show Less Reviews";
+            } else {
+                hiddenDiv.classList.add('opacity-0');
+                setTimeout(() => hiddenDiv.classList.add('hidden'), 500);
+                btn.innerText = "Load All 25 Google Reviews";
+                window.scrollTo({top: document.getElementById('google-reviews-header').offsetTop - 80, behavior: 'smooth'});
+            }
+        }
+
+        function toggleReviews() {
+            const hiddenDiv = document.getElementById('more-reviews');
+            const btn = document.getElementById('show-more-reviews-btn');
+            
+            if (hiddenDiv.classList.contains('hidden')) {
+                hiddenDiv.classList.remove('hidden');
+                setTimeout(() => hiddenDiv.classList.remove('opacity-0'), 50);
+                btn.innerText = "Show Less Reviews";
+            } else {
+                hiddenDiv.classList.add('opacity-0');
+                setTimeout(() => hiddenDiv.classList.add('hidden'), 500);
+                btn.innerText = "Load All 36 Facebook Reviews";
+                window.scrollTo({top: document.getElementById('facebook-reviews-header').offsetTop - 80, behavior: 'smooth'});
+            }
+        }
+    </script>
+</body>
+</html>
