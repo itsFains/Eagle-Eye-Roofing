@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Pages -->
   <url>
     <loc>https://www.eagleeyeroofingandbuilding.com/</loc>
     <changefreq>weekly</changefreq>
@@ -8,7 +9,7 @@
   <url>
     <loc>https://www.eagleeyeroofingandbuilding.com/services/</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.eagleeyeroofingandbuilding.com/projects/</loc>
@@ -34,5 +35,74 @@
     <loc>https://www.eagleeyeroofingandbuilding.com/contact/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.9</priority>
+  </url>
+
+  <!-- Dedicated Service SEO Pages -->
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/services/full-re-roofs/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/services/flat-roofing/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/services/roof-repairs/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/services/chimneys-and-leadwork/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/services/fascias-and-soffits/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/services/guttering/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/services/loft-insulation/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/services/solar-panel-maintenance/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- City & Location SEO Pages -->
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/areas/roofers-in-swansea/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/areas/roofers-in-neath/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/areas/roofers-in-port-talbot/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/areas/roofers-in-llanelli/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/areas/roofers-in-bridgend/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
