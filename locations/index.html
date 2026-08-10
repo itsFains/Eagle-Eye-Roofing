@@ -4,41 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="description" content="Eagle Eye Roofing & Building serves Swansea, Mumbles, Morriston, Neath, Port Talbot, Llanelli, and all of South Wales. Contact us for top-rated local roofing services.">
-    <meta name="keywords" content="roofers Swansea, roofing contractors Neath, roof repairs Port Talbot, Llanelli roofers, South Wales roofing company, local roofers near me">
+    <!-- SEO Meta Tags Specific to Services Page -->
+    <meta name="description" content="Explore our professional roofing services in Swansea and South Wales. We offer full re-roofs, flat roofing, emergency repairs, UPVC guttering, and Marley Solar Panels.">
+    <meta name="keywords" content="roofing services Swansea, flat roofs South Wales, roof repairs, EPDM rubber roofing, Marley solar panels, chimney repointing, fascias and soffits">
     <meta name="author" content="Eagle Eye Roofing & Building">
     
-    <title>Areas We Cover | Local Roofers Swansea & South Wales</title>
+    <title>Our Services | Eagle Eye Roofing & Building</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
     <link rel="apple-touch-icon" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
     
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Schema Markup for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "RoofingContractor",
-      "name": "Eagle Eye Roofing & Building",
-      "areaServed": [
-        {"@type": "City", "name": "Swansea"},
-        {"@type": "City", "name": "Mumbles"},
-        {"@type": "City", "name": "Morriston"},
-        {"@type": "City", "name": "Neath"},
-        {"@type": "City", "name": "Port Talbot"},
-        {"@type": "City", "name": "Porthcawl"},
-        {"@type": "City", "name": "Gorseinon"},
-        {"@type": "City", "name": "Pontarddulais"},
-        {"@type": "City", "name": "Carmarthen"},
-        {"@type": "City", "name": "Ammanford"},
-        {"@type": "City", "name": "Llanelli"},
-        {"@type": "City", "name": "Bridgend"},
-        {"@type": "City", "name": "Ystradgynlais"},
-        {"@type": "Region", "name": "South Wales"}
-      ]
+      "@type": "Service",
+      "provider": {
+        "@type": "RoofingContractor",
+        "name": "Eagle Eye Roofing & Building"
+      },
+      "serviceType": ["Roof Replacement", "Flat Roofing", "Roof Repairs", "Solar Panel Installation", "Loft Insulation", "Guttering"]
     }
     </script>
 
@@ -74,10 +69,10 @@
                 
                 <div class="hidden md:flex space-x-5 lg:space-x-7 items-center">
                     <a href="/" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Home</a>
-                    <a href="/services/" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Services</a>
+                    <a href="/services/" class="text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Services</a>
                     <a href="/projects/" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Projects</a>
                     <a href="/reviews/" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Reviews</a>
-                    <a href="/locations/" class="text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Locations</a>
+                    <a href="/locations/" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Locations</a>
                     <a href="/faq/" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">FAQ</a>
                     <a href="/contact/" class="gold-bg text-black px-4 lg:px-6 py-2 rounded-full text-xs lg:text-sm font-bold uppercase hover:opacity-90 transition-opacity transform hover:scale-105">Get a Quote</a>
                 </div>
@@ -88,168 +83,277 @@
         
         <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-white/10 px-4 py-4 space-y-4">
             <a href="/" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Home</a>
-            <a href="/services/" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Services</a>
+            <a href="/services/" class="block w-full text-left text-yellow-500 uppercase tracking-wider font-medium">Services</a>
             <a href="/projects/" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Projects</a>
             <a href="/reviews/" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Reviews</a>
-            <a href="/locations/" class="block w-full text-left text-yellow-500 uppercase tracking-wider font-medium">Locations</a>
+            <a href="/locations/" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Locations</a>
             <a href="/faq/" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">FAQ</a>
             <a href="/contact/" class="block w-full text-center gold-bg text-black font-bold uppercase py-3 rounded tracking-wider">Get a Quote</a>
         </div>
     </nav>
 
     <main class="flex-grow flex flex-col relative">
+        <!-- Page Header -->
         <div class="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden border-b border-white/10">
-            <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project6.2.jpg');"></div>
+            <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.jpg');"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
             <div class="relative z-10 text-center px-4 max-w-4xl mt-10">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4 brand-font text-white drop-shadow-lg leading-tight uppercase">Areas We <span class="gold-gradient">Cover</span></h1>
-                <p class="text-zinc-300 font-light md:text-xl max-w-2xl mx-auto">Providing top-tier roofing services across Swansea and the wider South Wales region.</p>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 brand-font text-white drop-shadow-lg leading-tight uppercase">Our <span class="gold-gradient">Services</span></h1>
+                <p class="text-zinc-300 font-light md:text-xl max-w-2xl mx-auto">Expert roofing and building solutions designed to protect your home for decades.</p>
             </div>
         </div>
 
+        <!-- Services Grid Section -->
         <section class="py-20 px-4">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16">
-                    <p class="text-yellow-500 uppercase tracking-[0.2em] text-sm font-semibold mb-3">Service Areas</p>
-                    <h2 class="text-4xl md:text-5xl brand-font font-bold gold-gradient drop-shadow-lg">ALL LOCATIONS SERVED</h2>
+                    <p class="text-yellow-500 uppercase tracking-[0.2em] text-sm font-semibold mb-3">What We Do</p>
+                    <h2 class="text-4xl md:text-5xl brand-font font-bold gold-gradient drop-shadow-lg">EXPERT ROOFING SOLUTIONS</h2>
                     <div class="w-24 h-1 gold-bg mx-auto mt-6 rounded-full opacity-50"></div>
                     <p class="text-zinc-300 max-w-3xl mx-auto mt-8 leading-relaxed md:text-lg font-light">
-                        Based in Swansea, Eagle Eye Roofing & Building proudly serves homeowners and businesses across South and West Wales. Whether you need an emergency roof repair, a brand new flat roof, or general building services, our expert team is ready to travel to your doorstep.
+                        Click on any service below to learn more about our process, premium materials, and how we can protect your property across South Wales.
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-20">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
-                    <a href="/areas/roofers-in-swansea/" class="bg-zinc-950 border border-white/5 rounded-2xl overflow-hidden group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.1)] block">
-                        <div class="p-8 h-full flex flex-col">
-                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-transform duration-500 group-hover:scale-110">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
+                    <!-- Service 1: Full Re-Roofs -->
+                    <a href="/services/full-re-roofs/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative z-10 flex-grow flex flex-col">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-home text-xl"></i>
                             </div>
-                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Swansea</h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Our home base. We provide rapid emergency repairs, complete new roofs, and durable flat roofing solutions across the entire city and surrounding suburbs.</p>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Full Re-Roofs</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Complete roof replacements using premium slate or tiles. We handle everything from stripping the old roof to fitting breathable membranes and treated battens.</p>
+                            <ul class="text-sm text-zinc-300 space-y-2 mb-8">
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Natural & Man-made Slate</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Concrete & Clay Tiles</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Full 25-Year Guarantee</li>
+                            </ul>
+                            
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
-                                <span class="flex items-center text-yellow-500 font-bold uppercase tracking-widest text-xs transition-all duration-300">
-                                    View Swansea Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <a href="/areas/roofers-in-neath/" class="bg-zinc-950 border border-white/5 rounded-2xl overflow-hidden group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.1)] block">
-                        <div class="p-8 h-full flex flex-col">
-                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-transform duration-500 group-hover:scale-110">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
+                    <!-- Service 2: Flat Roofing -->
+                    <a href="/services/flat-roofing/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative z-10 flex-grow flex flex-col">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-layer-group text-xl"></i>
                             </div>
-                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Neath</h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">From Skewen to the Neath Valley, our 5-star rated team delivers guaranteed craftsmanship, ensuring your property is fully protected from the elements.</p>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Flat Roofing</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Modern, highly durable flat roofing solutions perfect for extensions, garages, and dormers. Say goodbye to leaks with seamless installations.</p>
+                            <ul class="text-sm text-zinc-300 space-y-2 mb-8">
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Firestone EPDM Rubber</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> GRP Fiberglass Systems</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Traditional Felt</li>
+                            </ul>
+                            
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
-                                <span class="flex items-center text-yellow-500 font-bold uppercase tracking-widest text-xs transition-all duration-300">
-                                    View Neath Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <a href="/areas/roofers-in-port-talbot/" class="bg-zinc-950 border border-white/5 rounded-2xl overflow-hidden group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.1)] block">
-                        <div class="p-8 h-full flex flex-col">
-                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-transform duration-500 group-hover:scale-110">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
+                    <!-- Service 3: Roof Repairs -->
+                    <a href="/services/roof-repairs/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative z-10 flex-grow flex flex-col">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-tools text-xl"></i>
                             </div>
-                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Port Talbot</h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Coastal winds require tough roofs. We offer highly resilient slate replacements and EPDM rubber flat roofs throughout Aberavon, Margam, and Baglan.</p>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Rapid Roof Repairs</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Storm damage or a sudden leak? We provide rapid, reliable repair services to secure your property and prevent further costly internal water damage.</p>
+                            <ul class="text-sm text-zinc-300 space-y-2 mb-8">
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Slipped or Missing Tiles</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Ridge Tile Re-bedding</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Lead Flashing Replacement</li>
+                            </ul>
+                            
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
-                                <span class="flex items-center text-yellow-500 font-bold uppercase tracking-widest text-xs transition-all duration-300">
-                                    View Port Talbot Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <a href="/areas/roofers-in-llanelli/" class="bg-zinc-950 border border-white/5 rounded-2xl overflow-hidden group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.1)] block">
-                        <div class="p-8 h-full flex flex-col">
-                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-transform duration-500 group-hover:scale-110">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
+                    <!-- Service 4: Chimney Work -->
+                    <a href="/services/chimneys-and-leadwork/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative z-10 flex-grow flex flex-col">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-hammer text-xl"></i>
                             </div>
-                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Llanelli</h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Covering Carmarthenshire borders, we provide zero upfront payment roofing services to homes from Burry Port to Felinfoel.</p>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Chimney & Leadwork</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Crumbling mortar and damaged leadwork on chimneys are prime causes of damp. We restore, repoint, or safely remove unstable chimneys.</p>
+                            <ul class="text-sm text-zinc-300 space-y-2 mb-8">
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Brick Repointing</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Chimney Capping & Removal</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Custom Lead Work</li>
+                            </ul>
+                            
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
-                                <span class="flex items-center text-yellow-500 font-bold uppercase tracking-widest text-xs transition-all duration-300">
-                                    View Llanelli Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <a href="/areas/roofers-in-bridgend/" class="bg-zinc-950 border border-white/5 rounded-2xl overflow-hidden group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.1)] block">
-                        <div class="p-8 h-full flex flex-col">
-                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] transition-transform duration-500 group-hover:scale-110">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
+                    <!-- Service 5: Fascias & Soffits -->
+                    <a href="/services/fascias-and-soffits/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative z-10 flex-grow flex flex-col">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-ruler-horizontal text-xl"></i>
                             </div>
-                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Bridgend</h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Protecting the Vale of Glamorgan. Whether it's a slipped tile in Pencoed or a full re-roof in Porthcawl, we have you covered.</p>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Fascias & Soffits</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Upgrade your roofline with maintenance-free UPVC. Protect your rafters from rot and instantly boost your home's kerb appeal.</p>
+                            <ul class="text-sm text-zinc-300 space-y-2 mb-8">
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> UPVC Fascias & Soffits</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Ventilated Rooflines</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Dry Verge Systems</li>
+                            </ul>
+                            
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
-                                <span class="flex items-center text-yellow-500 font-bold uppercase tracking-widest text-xs transition-all duration-300">
-                                    View Bridgend Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <div class="bg-zinc-950 border border-white/5 rounded-2xl overflow-hidden group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.1)] cursor-default">
-                        <div class="p-8 h-full flex flex-col">
-                            <div class="w-12 h-12 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-6 text-zinc-500 transition-transform duration-500 group-hover:scale-110">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
+                    <!-- Service 6: Guttering -->
+                    <a href="/services/guttering/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative z-10 flex-grow flex flex-col">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-water text-xl"></i>
                             </div>
-                            <h3 class="text-2xl brand-font font-bold mb-3 text-white">Mumbles</h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Specialized coastal roofing solutions, from chimney repointing to premium slate repairs designed to withstand sea salt and high winds.</p>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Guttering & Cleaning</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Stop damp from penetrating your brickwork. We offer rapid gutter clearing, joint leak repairs, and full installations of high-capacity UPVC systems.</p>
+                            <ul class="text-sm text-zinc-300 space-y-2 mb-8">
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Gutter Clearing & Unblocking</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Dripping Joint Repairs</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Deep Flow UPVC Installation</li>
+                            </ul>
+                            
+                            <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
+                                <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="bg-zinc-950 border border-white/5 rounded-2xl overflow-hidden group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.1)] cursor-default">
-                        <div class="p-8 h-full flex flex-col">
-                            <div class="w-12 h-12 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-6 text-zinc-500 transition-transform duration-500 group-hover:scale-110">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
+                    <!-- Service 7: Loft Insulation -->
+                    <a href="/services/loft-insulation/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative z-10 flex-grow flex flex-col">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-temperature-low text-xl"></i>
                             </div>
-                            <h3 class="text-2xl brand-font font-bold mb-3 text-white">Morriston</h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Serving the north of Swansea with rapid response leak fixes, flat roof overlays, and maintenance-free UPVC fascias and soffits.</p>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Loft Insulation</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Stop throwing money away on heating bills. We install and top up high-performance loft insulation to dramatically improve your home's thermal efficiency.</p>
+                            <ul class="text-sm text-zinc-300 space-y-2 mb-8">
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Blanket & Roll Insulation</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Depth Top-Ups to 270mm</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Reduce Energy Bills</li>
+                            </ul>
+                            
+                            <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
+                                <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="bg-zinc-950 border border-white/5 rounded-2xl overflow-hidden group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.1)] cursor-default">
-                        <div class="p-8 h-full flex flex-col">
-                            <div class="w-12 h-12 rounded-full bg-zinc-900 border border-white/10 flex items-center justify-center mb-6 text-zinc-500 transition-transform duration-500 group-hover:scale-110">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
+                    <!-- Service 8: Solar Panel Maintenance -->
+                    <a href="/services/solar-panel-maintenance/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative z-10 flex-grow flex flex-col">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-hand-sparkles text-xl"></i>
                             </div>
-                            <h3 class="text-2xl brand-font font-bold mb-3 text-white">Carmarthen</h3>
-                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Traveling into West Wales to provide certified roof replacements and integrated Marley solar panel installations for your home.</p>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Solar Maintenance</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Protect your investment. We offer chemical-free purified water cleaning to restore energy yields, alongside specialized bird-proofing mesh installation.</p>
+                            <ul class="text-sm text-zinc-300 space-y-2 mb-8">
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Pure Water Cleaning</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Bird & Pigeon Proofing</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Maximize Energy Output</li>
+                            </ul>
+                            
+                            <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
+                                <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
+
+                    <!-- Service 9: Velux Windows -->
+                    <a href="/services/velux-windows/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative z-10 flex-grow flex flex-col">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-sun text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Velux Windows</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Flood your loft conversions and extensions with natural light. We are certified installers of Velux roof windows and precise lead flashings.</p>
+                            <ul class="text-sm text-zinc-300 space-y-2 mb-8">
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> New Velux Installations</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Skylight Replacements</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Watertight Flashing Kits</li>
+                            </ul>
+                            
+                            <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
+                                <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Service 10: Marley Solar Panels -->
+                    <a href="/services/solar-panels/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="relative z-10 flex-grow flex flex-col">
+                            <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
+                                <i class="fas fa-solar-panel text-xl"></i>
+                            </div>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Marley Solar Panels</h3>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">We provide seamless, roof-integrated Marley Solar panels. Generate your own clean energy with a stunning, low-profile aesthetic finish that blends into your roofline.</p>
+                            <ul class="text-sm text-zinc-300 space-y-2 mb-8">
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Integrated Roof Aesthetics</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Lower Energy Bills</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Certified Installation</li>
+                            </ul>
+                            
+                            <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
+                                <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-zinc-900/50 border border-white/5 rounded-3xl overflow-hidden p-4 md:p-8">
-                    <div class="w-full h-[400px] rounded-2xl overflow-hidden shadow-2xl border border-white/10 relative grayscale hover:grayscale-0 transition-all duration-700">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158309.28292850382!2d-4.10303102432832!3d51.642646241320364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486eec9b1e95e7c5%3A0xcb4c6e917d5e4a0!2sSwansea!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
-                    
-                    <div class="text-center lg:text-left">
-                        <h3 class="text-3xl brand-font font-bold mb-4 text-white">Don't see your town?</h3>
-                        <p class="text-zinc-400 mb-8 leading-relaxed">
-                            While these are our most frequent service areas, our team travels extensively throughout South Wales to ensure homeowners get the premium roofing work they deserve. If you are near any of these locations, we can likely reach you.
-                        </p>
-                        <a href="/contact/" class="gold-bg text-black px-8 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all transform hover:scale-105 shadow-[0_0_15px_rgba(212,175,55,0.3)] inline-flex items-center gap-3">
-                            <i class="fas fa-envelope"></i> Contact Us To Check
-                        </a>
-                    </div>
-                </div>
-
+            </div>
+            
+            <div class="mt-20 text-center pb-10">
+                <p class="text-zinc-400 mb-6 text-lg">Need a service not listed here? We handle all aspects of roofing.</p>
+                <a href="/contact/" class="inline-block gold-bg text-black px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                    Contact Us For a Quote
+                </a>
             </div>
         </section>
     </main>
