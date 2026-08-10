@@ -78,6 +78,16 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/services/velux-windows/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.eagleeyeroofingandbuilding.com/services/solar-panels/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
   <!-- City & Location SEO Pages -->
   <url>
