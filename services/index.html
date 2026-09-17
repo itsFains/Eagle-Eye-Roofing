@@ -1,99 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags Specific to Services Page -->
-    <meta name="description" content="Explore our professional roofing services in Swansea and South Wales. We offer full re-roofs, flat roofing, emergency repairs, UPVC guttering, and Marley Solar Panels.">
-    <meta name="keywords" content="roofing services Swansea, flat roofs South Wales, roof repairs, EPDM rubber roofing, Marley solar panels, chimney repointing, fascias and soffits">
-    <meta name="author" content="Eagle Eye Roofing & Building">
-    
-    <title>Our Services | Eagle Eye Roofing & Building</title>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
-    <link rel="apple-touch-icon" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png?w=192&h=192">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Schema Markup for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "provider": {
-        "@type": "RoofingContractor",
-        "name": "Eagle Eye Roofing & Building"
-      },
-      "serviceType": ["Roof Replacement", "Flat Roofing", "Roof Repairs", "Solar Panel Installation", "Loft Insulation", "Guttering"]
-    }
-    </script>
-
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #000000; color: white; overflow-x: hidden; }
-        .brand-font { font-family: 'Cinzel', serif; }
-        
-        .gold-gradient { background: linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C); -webkit-background-clip: text; background-clip: text; color: transparent; }
-        .gold-bg { background: linear-gradient(to right, #BF953F, #B38728, #AA771C); }
-        
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-        
-        .logo-blend { mix-blend-mode: screen; }
-    </style>
-</head>
-<body class="antialiased flex flex-col min-h-screen bg-black">
-
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-40 bg-black/95 backdrop-blur-md border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex items-center justify-between h-20">
-                <a href="/" class="flex items-center cursor-pointer group">
-                    <div class="relative">
-                        <div class="absolute inset-0 rounded-full border border-yellow-600/50 shadow-[0_0_15px_rgba(212,175,55,0.2)] group-hover:shadow-[0_0_25px_rgba(212,175,55,0.5)] transition-all"></div>
-                        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Logo" class="h-12 w-12 sm:h-14 sm:w-14 object-cover rounded-full relative z-10 logo-blend">
-                    </div>
-                    <div class="ml-3 flex flex-col justify-center">
-                        <span class="text-sm sm:text-lg font-bold tracking-widest uppercase brand-font text-yellow-500 leading-tight">Eagle Eye</span>
-                        <span class="text-[0.55rem] sm:text-[0.65rem] font-semibold tracking-[0.15em] uppercase text-zinc-300 mt-0.5 whitespace-nowrap">Roofing & Building</span>
-                    </div>
-                </a>
-                
-                <div class="hidden md:flex space-x-5 lg:space-x-7 items-center">
-                    <a href="/" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Home</a>
-                    <a href="/services/" class="text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Services</a>
-                    <a href="/projects/" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Projects</a>
-                    <a href="/reviews/" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Reviews</a>
-                    <a href="/locations/" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">Locations</a>
-                    <a href="/faq/" class="text-zinc-300 hover:text-yellow-500 uppercase tracking-wider text-xs lg:text-sm font-medium transition-colors">FAQ</a>
-                    <a href="/contact/" class="gold-bg text-black px-4 lg:px-6 py-2 rounded-full text-xs lg:text-sm font-bold uppercase hover:opacity-90 transition-opacity transform hover:scale-105">Get a Quote</a>
-                </div>
-                
-                <button onclick="toggleMobileMenu()" class="md:hidden text-zinc-400 text-2xl hover:text-yellow-500 transition-colors"><i class="fas fa-bars"></i></button>
-            </div>
-        </div>
-        
-        <div id="mobile-menu" class="hidden md:hidden bg-black border-b border-white/10 px-4 py-4 space-y-4">
-            <a href="/" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Home</a>
-            <a href="/services/" class="block w-full text-left text-yellow-500 uppercase tracking-wider font-medium">Services</a>
-            <a href="/projects/" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Projects</a>
-            <a href="/reviews/" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Reviews</a>
-            <a href="/locations/" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">Locations</a>
-            <a href="/faq/" class="block w-full text-left text-zinc-300 hover:text-yellow-500 uppercase tracking-wider font-medium">FAQ</a>
-            <a href="/contact/" class="block w-full text-center gold-bg text-black font-bold uppercase py-3 rounded tracking-wider">Get a Quote</a>
-        </div>
-    </nav>
-
-    <main class="flex-grow flex flex-col relative">
-        <!-- Page Header -->
+<!doctype html>
+<html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Our Services | Eagle Eye Roofing &amp; Building</title><meta name="description" content="Explore our professional roofing services in Swansea and South Wales. We offer full re-roofs, flat roofing, emergency repairs, UPVC guttering, and Marley Solar Panels."><link rel="canonical" href="https://www.eagleeyeroofingandbuilding.com/services/"><meta property="og:title" content="Our Services | Eagle Eye Roofing &amp; Building"><meta property="og:description" content="Explore our professional roofing services in Swansea and South Wales. We offer full re-roofs, flat roofing, emergency repairs, UPVC guttering, and Marley Solar Panels."><meta property="og:url" content="https://www.eagleeyeroofingandbuilding.com/services/"><meta property="og:type" content="website"><link rel="stylesheet" href="../assets/legacy.css"><link rel="stylesheet" href="../assets/site.css"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "RoofingContractor", "name": "Eagle Eye Roofing & Building", "url": "https://www.eagleeyeroofingandbuilding.com/", "telephone": "+447753865817", "areaServed": ["Swansea", "Neath", "Port Talbot", "Llanelli", "Bridgend"], "sameAs": ["https://www.facebook.com/profile.php?id=61575037616597", "https://www.instagram.com/eagleeye_roofingbuilding/"]}</script><link rel="icon" href="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png"></head><body><div id="eagle-site"><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="wrap header-inner"><a class="brand" href="../index.html" aria-label="Eagle Eye Roofing home"><img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" width="60" height="60" alt="Eagle Eye Roofing logo"><span><strong>EAGLE EYE</strong><small>Roofing &amp; Building</small></span></a><nav class="desktop-nav" aria-label="Main navigation"><a href="../index.html">Home</a><a href="index.html">Services</a><a href="../projects/index.html">Projects</a><a href="../reviews/index.html">Reviews</a><a href="../locations/index.html">Areas</a><a href="../faq/index.html">FAQ</a><a class="gold-button" href="../contact/index.html">Get a free quote</a></nav><button class="menu-button" data-menu aria-controls="mobile-nav" aria-expanded="false">Menu ☰</button></div><nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="../index.html">Home</a><a href="index.html">Services</a><a href="../projects/index.html">Projects</a><a href="../reviews/index.html">Reviews</a><a href="../locations/index.html">Areas</a><a href="../faq/index.html">FAQ</a><a href="../contact/index.html">Get a free quote</a></nav></header><main class="page-main flex-grow flex flex-col relative" id="main">
         <div class="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden border-b border-white/10">
             <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/project4.jpg');"></div>
             <div class="absolute inset-0 bg-gradient-to-t from-black via-black/80 to-transparent"></div>
@@ -103,7 +9,6 @@
             </div>
         </div>
 
-        <!-- Services Grid Section -->
         <section class="py-20 px-4">
             <div class="max-w-7xl mx-auto">
                 <div class="text-center mb-16">
@@ -117,231 +22,221 @@
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
-                    <!-- Service 1: Full Re-Roofs -->
-                    <a href="/services/full-re-roofs/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                    <a href="full-re-roofs/index.html" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="relative z-10 flex-grow flex flex-col">
                             <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
-                                <i class="fas fa-home text-xl"></i>
+                                <i class="fas fa-home text-xl icon" aria-hidden="true">⌂</i>
                             </div>
                             <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Full Re-Roofs</h3>
                             <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Complete roof replacements using premium slate or tiles. We handle everything from stripping the old roof to fitting breathable membranes and treated battens.</p>
                             <ul class="text-sm text-zinc-300 space-y-2 mb-8">
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Natural & Man-made Slate</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Concrete & Clay Tiles</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Full 25-Year Guarantee</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Natural &amp; Man-made Slate</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Concrete &amp; Clay Tiles</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Full 25-Year Guarantee</li>
                             </ul>
                             
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
                                 <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
-                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 icon" aria-hidden="true">→</i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Service 2: Flat Roofing -->
-                    <a href="/services/flat-roofing/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                    <a href="flat-roofing/index.html" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="relative z-10 flex-grow flex flex-col">
                             <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
-                                <i class="fas fa-layer-group text-xl"></i>
+                                <i class="fas fa-layer-group text-xl icon" aria-hidden="true">◇</i>
                             </div>
                             <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Flat Roofing</h3>
                             <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Modern, highly durable flat roofing solutions perfect for extensions, garages, and dormers. Say goodbye to leaks with seamless installations.</p>
                             <ul class="text-sm text-zinc-300 space-y-2 mb-8">
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Firestone EPDM Rubber</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> GRP Fiberglass Systems</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Traditional Felt</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Firestone EPDM Rubber</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> GRP Fiberglass Systems</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Traditional Felt</li>
                             </ul>
                             
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
                                 <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
-                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 icon" aria-hidden="true">→</i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Service 3: Roof Repairs -->
-                    <a href="/services/roof-repairs/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                    <a href="roof-repairs/index.html" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="relative z-10 flex-grow flex flex-col">
                             <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
-                                <i class="fas fa-tools text-xl"></i>
+                                <i class="fas fa-tools text-xl icon" aria-hidden="true">◇</i>
                             </div>
                             <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Rapid Roof Repairs</h3>
                             <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Storm damage or a sudden leak? We provide rapid, reliable repair services to secure your property and prevent further costly internal water damage.</p>
                             <ul class="text-sm text-zinc-300 space-y-2 mb-8">
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Slipped or Missing Tiles</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Ridge Tile Re-bedding</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Lead Flashing Replacement</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Slipped or Missing Tiles</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Ridge Tile Re-bedding</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Lead Flashing Replacement</li>
                             </ul>
                             
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
                                 <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
-                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 icon" aria-hidden="true">→</i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Service 4: Chimney Work -->
-                    <a href="/services/chimneys-and-leadwork/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                    <a href="chimneys-and-leadwork/index.html" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="relative z-10 flex-grow flex flex-col">
                             <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
-                                <i class="fas fa-hammer text-xl"></i>
+                                <i class="fas fa-hammer text-xl icon" aria-hidden="true">◇</i>
                             </div>
-                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Chimney & Leadwork</h3>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Chimney &amp; Leadwork</h3>
                             <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Crumbling mortar and damaged leadwork on chimneys are prime causes of damp. We restore, repoint, or safely remove unstable chimneys.</p>
                             <ul class="text-sm text-zinc-300 space-y-2 mb-8">
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Brick Repointing</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Chimney Capping & Removal</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Custom Lead Work</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Brick Repointing</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Chimney Capping &amp; Removal</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Custom Lead Work</li>
                             </ul>
                             
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
                                 <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
-                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 icon" aria-hidden="true">→</i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Service 5: Fascias & Soffits -->
-                    <a href="/services/fascias-and-soffits/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                    <a href="fascias-and-soffits/index.html" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="relative z-10 flex-grow flex flex-col">
                             <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
-                                <i class="fas fa-ruler-horizontal text-xl"></i>
+                                <i class="fas fa-ruler-horizontal text-xl icon" aria-hidden="true">◇</i>
                             </div>
-                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Fascias & Soffits</h3>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Fascias &amp; Soffits</h3>
                             <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Upgrade your roofline with maintenance-free UPVC. Protect your rafters from rot and instantly boost your home's kerb appeal.</p>
                             <ul class="text-sm text-zinc-300 space-y-2 mb-8">
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> UPVC Fascias & Soffits</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Ventilated Rooflines</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Dry Verge Systems</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> UPVC Fascias &amp; Soffits</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Ventilated Rooflines</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Dry Verge Systems</li>
                             </ul>
                             
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
                                 <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
-                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 icon" aria-hidden="true">→</i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Service 6: Guttering -->
-                    <a href="/services/guttering/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                    <a href="guttering/index.html" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="relative z-10 flex-grow flex flex-col">
                             <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
-                                <i class="fas fa-water text-xl"></i>
+                                <i class="fas fa-water text-xl icon" aria-hidden="true">◇</i>
                             </div>
-                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Guttering & Cleaning</h3>
+                            <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Guttering &amp; Cleaning</h3>
                             <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Stop damp from penetrating your brickwork. We offer rapid gutter clearing, joint leak repairs, and full installations of high-capacity UPVC systems.</p>
                             <ul class="text-sm text-zinc-300 space-y-2 mb-8">
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Gutter Clearing & Unblocking</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Dripping Joint Repairs</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Deep Flow UPVC Installation</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Gutter Clearing &amp; Unblocking</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Dripping Joint Repairs</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Deep Flow UPVC Installation</li>
                             </ul>
                             
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
                                 <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
-                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 icon" aria-hidden="true">→</i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Service 7: Loft Insulation -->
-                    <a href="/services/loft-insulation/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                    <a href="loft-insulation/index.html" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="relative z-10 flex-grow flex flex-col">
                             <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
-                                <i class="fas fa-temperature-low text-xl"></i>
+                                <i class="fas fa-temperature-low text-xl icon" aria-hidden="true">◇</i>
                             </div>
                             <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Loft Insulation</h3>
                             <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Stop throwing money away on heating bills. We install and top up high-performance loft insulation to dramatically improve your home's thermal efficiency.</p>
                             <ul class="text-sm text-zinc-300 space-y-2 mb-8">
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Blanket & Roll Insulation</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Depth Top-Ups to 270mm</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Reduce Energy Bills</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Blanket &amp; Roll Insulation</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Depth Top-Ups to 270mm</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Reduce Energy Bills</li>
                             </ul>
                             
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
                                 <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
-                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 icon" aria-hidden="true">→</i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Service 8: Solar Panel Maintenance -->
-                    <a href="/services/solar-panel-maintenance/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                    <a href="solar-panel-maintenance/index.html" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="relative z-10 flex-grow flex flex-col">
                             <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
-                                <i class="fas fa-hand-sparkles text-xl"></i>
+                                <i class="fas fa-hand-sparkles text-xl icon" aria-hidden="true">◇</i>
                             </div>
                             <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Solar Maintenance</h3>
                             <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Protect your investment. We offer chemical-free purified water cleaning to restore energy yields, alongside specialized bird-proofing mesh installation.</p>
                             <ul class="text-sm text-zinc-300 space-y-2 mb-8">
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Pure Water Cleaning</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Bird & Pigeon Proofing</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Maximize Energy Output</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Pure Water Cleaning</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Bird &amp; Pigeon Proofing</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Maximize Energy Output</li>
                             </ul>
                             
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
                                 <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
-                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 icon" aria-hidden="true">→</i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Service 9: Velux Windows -->
-                    <a href="/services/velux-windows/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                    <a href="velux-windows/index.html" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="relative z-10 flex-grow flex flex-col">
                             <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
-                                <i class="fas fa-sun text-xl"></i>
+                                <i class="fas fa-sun text-xl icon" aria-hidden="true">◇</i>
                             </div>
                             <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Velux Windows</h3>
                             <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">Flood your loft conversions and extensions with natural light. We are certified installers of Velux roof windows and precise lead flashings.</p>
                             <ul class="text-sm text-zinc-300 space-y-2 mb-8">
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> New Velux Installations</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Skylight Replacements</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Watertight Flashing Kits</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> New Velux Installations</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Skylight Replacements</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Watertight Flashing Kits</li>
                             </ul>
                             
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
                                 <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
-                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 icon" aria-hidden="true">→</i>
                                 </span>
                             </div>
                         </div>
                     </a>
 
-                    <!-- Service 10: Marley Solar Panels -->
-                    <a href="/services/solar-panels/" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
+                    <a href="solar-panels/index.html" class="block bg-zinc-950 border border-white/5 rounded-2xl p-8 flex flex-col group hover:border-yellow-600/50 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(212,175,55,0.15)] relative overflow-hidden">
                         <div class="absolute inset-0 bg-gradient-to-b from-yellow-600/0 to-yellow-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         <div class="relative z-10 flex-grow flex flex-col">
                             <div class="w-12 h-12 rounded-full gold-bg flex items-center justify-center mb-6 text-black shadow-[0_0_15px_rgba(212,175,55,0.4)] group-hover:scale-110 transition-transform duration-500">
-                                <i class="fas fa-solar-panel text-xl"></i>
+                                <i class="fas fa-solar-panel text-xl icon" aria-hidden="true">◇</i>
                             </div>
                             <h3 class="text-2xl brand-font font-bold mb-3 text-white group-hover:text-yellow-500 transition-colors">Marley Solar Panels</h3>
                             <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow">We provide seamless, roof-integrated Marley Solar panels. Generate your own clean energy with a stunning, low-profile aesthetic finish that blends into your roofline.</p>
                             <ul class="text-sm text-zinc-300 space-y-2 mb-8">
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Integrated Roof Aesthetics</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Lower Energy Bills</li>
-                                <li><i class="fas fa-check text-yellow-500 mr-2"></i> Certified Installation</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Integrated Roof Aesthetics</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Lower Energy Bills</li>
+                                <li><i class="fas fa-check text-yellow-500 mr-2 icon" aria-hidden="true">✓</i> Certified Installation</li>
                             </ul>
                             
                             <div class="mt-auto pt-4 border-t border-white/5 group-hover:border-yellow-600/30 transition-colors">
                                 <span class="flex items-center justify-center w-full bg-zinc-900 border border-white/10 group-hover:border-yellow-500 group-hover:bg-yellow-500 text-zinc-300 group-hover:text-black font-bold uppercase tracking-widest text-xs py-3 rounded-xl transition-all duration-300">
-                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300"></i>
+                                    View Service Details <i class="fas fa-arrow-right ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 icon" aria-hidden="true">→</i>
                                 </span>
                             </div>
                         </div>
@@ -351,58 +246,11 @@
             
             <div class="mt-20 text-center pb-10">
                 <p class="text-zinc-400 mb-6 text-lg">Need a service not listed here? We handle all aspects of roofing.</p>
-                <a href="/contact/" class="inline-block gold-bg text-black px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                <a href="../contact/index.html" class="inline-block gold-bg text-black px-10 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:opacity-90 transition-all transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
                     Contact Us For a Quote
                 </a>
             </div>
         </section>
     </main>
 
-    <footer class="bg-zinc-950 py-12 border-t border-white/5 text-center flex flex-col items-center">
-        <img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" alt="Logo" class="h-16 w-16 object-cover rounded-full mb-4 logo-blend border border-yellow-600/30">
-        <p class="text-yellow-500 font-bold mb-2 tracking-widest uppercase text-sm">Eagle Eye Roofing & Building</p>
-        <p class="text-zinc-500 text-sm tracking-widest uppercase mb-1">Swansea & South Wales</p>
-        <p class="text-zinc-600 text-xs tracking-wider">Incorporated 12 March 2025</p>
-    </footer>
-
-    <!-- Floating Phone Button -->
-    <div id="floating-phone-btn" onclick="handlePhoneClick()" class="fixed bottom-6 right-6 z-40 bg-gradient-to-r from-yellow-600 to-yellow-400 text-black h-14 w-14 rounded-full shadow-[0_0_20px_rgba(212,175,55,0.6)] cursor-pointer hover:scale-105 transition-all duration-300 overflow-hidden flex items-center group">
-        <div class="w-14 h-14 flex items-center justify-center shrink-0">
-            <i class="fas fa-phone text-xl"></i>
-        </div>
-        <span id="floating-phone-num" class="font-bold text-lg whitespace-nowrap opacity-0 w-0 transition-all duration-300">07753 865817</span>
-    </div>
-
-    <script>
-        function toggleMobileMenu() { 
-            document.getElementById('mobile-menu').classList.toggle('hidden'); 
-        }
-
-        let phoneExpanded = false;
-        function handlePhoneClick() {
-            const btn = document.getElementById('floating-phone-btn');
-            const num = document.getElementById('floating-phone-num');
-            
-            if (!phoneExpanded) {
-                btn.classList.remove('w-14');
-                btn.classList.add('w-48');
-                num.classList.remove('opacity-0', 'w-0');
-                num.classList.add('opacity-100', 'w-auto', 'pr-6');
-                phoneExpanded = true;
-                
-                setTimeout(() => {
-                    if(phoneExpanded) {
-                        btn.classList.add('w-14');
-                        btn.classList.remove('w-48');
-                        num.classList.add('opacity-0', 'w-0');
-                        num.classList.remove('opacity-100', 'w-auto', 'pr-6');
-                        phoneExpanded = false;
-                    }
-                }, 5000);
-            } else {
-                window.location.href = 'tel:07753865817';
-            }
-        }
-    </script>
-</body>
-</html>
+    <section class="cta-band"><div class="wrap cta-inner"><div><p class="eyebrow">Let’s talk about your roof</p><h2>Good work starts with a conversation.</h2><p>Book a free, no-obligation site survey with our team.</p></div><a class="gold-button" href="../contact/index.html">Get your free quote ↗</a></div></section><footer class="site-footer"><div class="wrap"><div class="footer-grid"><div><a class="brand" href="../index.html" aria-label="Eagle Eye Roofing home"><img src="https://asommers1994.sirv.com/Images/Eagle%20Eye%20Roofing/IMG_2396.png" width="60" height="60" alt="Eagle Eye Roofing logo"><span><strong>EAGLE EYE</strong><small>Roofing &amp; Building</small></span></a><p>A family-run roofing and building business serving Swansea and South Wales. Precision, integrity and craftsmanship.</p></div><div><h3>Explore</h3><a href="index.html">Roofing services</a><a href="../projects/index.html">Our work</a><a href="../reviews/index.html">Customer reviews</a><a href="../about/index.html">About Eagle Eye</a><a href="../faq/index.html">Roofing advice</a></div><div><h3>Talk to the team</h3><a href="tel:07753865817">07753 865817</a><a href="../contact/index.html">Request a free quote</a><a href="https://www.facebook.com/profile.php?id=61575037616597" target="_blank" rel="noopener">Facebook ↗</a><a href="https://www.instagram.com/eagleeye_roofingbuilding/" target="_blank" rel="noopener">Instagram ↗</a><p>Mon–Sat · 8am–6pm<br>Emergency enquiries welcome</p></div></div><div class="footer-bottom"><span>© Eagle Eye Roofing &amp; Building · Swansea &amp; South Wales</span><span>Precision · Integrity · Craftsmanship</span></div></div></footer><div class="mobile-actions"><a class="outline-button" href="tel:07753865817">Call the team</a><a class="gold-button" href="../contact/index.html">Free quote</a></div><dialog id="photo-dialog" aria-label="Project photograph"><button data-close-photo aria-label="Close photograph">×</button><img src="" alt=""></dialog></div><script src="../assets/site.js" defer></script></body></html>

@@ -1,0 +1,29 @@
+EAGLE EYE ROOFING — HTML WEBSITE UPDATE
+
+OPEN THE WEBSITE
+Double-click index.html. Internet access is needed for the original Sirv images and the embedded map. Links to other pages work when opened from your computer.
+
+UPDATE YOUR EXISTING GITHUB FOLDER
+1. Keep a backup of your current website folder.
+2. Open this Eagle-Eye-Roofing folder and copy its contents.
+3. Paste into the EXISTING Eagle-Eye-Roofing folder shown by GitHub Desktop (Repository > Show in Explorer). Allow matching website files to be replaced.
+4. Do not delete your existing repository folder or its Git data. This ZIP contains website files only, not replacement Git history.
+5. Review the changes in GitHub Desktop. Commit and push when you are happy; this may publish the site if GitHub Pages deploys your branch.
+
+IMAGES
+Original full-size Sirv URLs are retained. The tiny embedded thumbnails from the earlier preview are not used. You do not need to move your images or change hosting. Source image quality is unchanged; larger files may take longer to load. No image service availability or speed score has been claimed.
+
+CONTENTS
+index.html: homepage
+services, projects, reviews, locations, faq, about, contact: HTML pages
+assets: CSS stylesheets and JavaScript, not a build system
+CNAME, robots.txt, sitemap.xml: existing domain and search configuration
+
+CHANGES
+Improved homepage, contact links and shared page styling; original service/town/guide content and all 61 review excerpts preserved; completed About page from existing business information; corrected sitemap paths and canonical URLs; old guide URLs redirect to preferred pages. No Hugo, build commands, or separate preview folders.
+
+FORM
+The contact form retains the original Formspree endpoint and is active. Opening the form does not send anything; clicking Request Free Quote with valid details submits an enquiry. Delivery has not been tested and no test enquiry was sent.
+
+CHECKS
+Internal HTML links, stylesheets, scripts, local references, review preservation, JavaScript syntax and ZIP contents checked. Rendered desktop/mobile browser checks could not be completed in this environment. Please inspect locally before publishing. Nothing has been pushed to GitHub.
